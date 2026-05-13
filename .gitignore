@@ -1,0 +1,22 @@
+# Environment variables
+.env
+.bak
+database/app.py.bak
+database/model.py.bak
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+.venv/
+.env/
+.git/

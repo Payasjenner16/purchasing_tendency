@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Purchasing Tendency Platform</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+
+body{
+
+background:linear-gradient(120deg,#e6d8ff,#d1e5ff);
+min-height:100vh;
+
+}
+
+/* NAVBAR */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 80px;
+
+}
+
+.logo{
+
+font-size:26px;
+font-weight:bold;
+color:#444;
+
+}
+
+.logo span{
+
+color:#6c4df6;
+
+}
+/* NAV LINKS CONTAINER */
+
+/* NAV LINKS CONTAINER */
+
+.nav-links{
+
+display:flex;
+gap:25px;
+background:rgba(255,255,255,0.35);
+padding:10px 20px;
+border-radius:40px;
+backdrop-filter:blur(10px);
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+}
+
+/* NAV LINKS */
+
+.nav-links a{
+
+position:relative;
+text-decoration:none;
+color:#444;
+font-weight:600;
+font-size:16px;
+padding:10px 15px;
+transition:0.3s;
+
+}
+
+/* UNDERLINE EFFECT */
+
+.nav-links a::after{
+
+content:"";
+position:absolute;
+left:0;
+bottom:-4px;
+width:0%;
+height:3px;
+background:#6c4df6;
+border-radius:3px;
+transition:0.35s ease;
+
+}
+
+/* HOVER */
+
+.nav-links a:hover{
+
+color:#6c4df6;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+/* ACTIVE LINK */
+
+.nav-links a.active{
+
+color:#6c4df6;
+
+}
+
+.nav-links a.active::after{
+
+width:100%;
+
+}
+.nav-links a{
+
+text-decoration:none;
+color:#444;
+font-weight:500;
+font-size:17px;
+
+}
+
+/* RIGHT NAV */
+
+.nav-right{
+
+display:flex;
+gap:20px;
+align-items:center;
+
+}
+
+.nav-btn{
+
+background:#6c4df6;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+
+}
+
+/* HERO SECTION */
+
+.hero{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+
+}
+
+/* LEFT TEXT */
+
+.hero-text{
+
+max-width:520px;
+
+}
+
+.hero-text h1{
+
+font-size:50px;
+font-weight:700;
+margin-bottom:15px;
+
+}
+
+.hero-text span{
+
+color:#6c4df6;
+
+}
+
+.hero-text p{
+
+color:#666;
+line-height:1.6;
+margin-bottom:30px;
+
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+display:flex;
+gap:20px;
+
+}
+
+.btn-primary{
+
+background:#6c4df6;
+color:white;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+
+}
+
+.btn-outline{
+
+border:2px solid #6c4df6;
+color:#6c4df6;
+padding:10px 25px;
+border-radius:6px;
+text-decoration:none;
+
+}
+
+/* IMAGE */
+
+.hero-img img{
+
+width:580px;
+height: auto;
+margin-bottom: 20%;
+
+}
+
+/* DOT SLIDER */
+
+.slider{
+
+margin-top:40px;
+
+}
+
+.slider span{
+
+height:10px;
+width:10px;
+background:#ccc;
+border-radius:50%;
+display:inline-block;
+margin-right:8px;
+
+}
+
+.slider span.active{
+
+background:#6c4df6;
+
+}
+
+/* FEATURES */
+
+.features{
+
+padding:80px;
+text-align:center;
+
+}
+
+.features h2{
+
+font-size:35px;
+margin-bottom:40px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+}
+
+.card i{
+
+font-size:30px;
+color:#6c4df6;
+margin-bottom:10px;
+
+}
+
+.card p{
+
+font-size:14px;
+color:#666;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:60px;
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+
+<i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+
+</div>
+
+
+<div class="nav-links">
+
+<a href="/" class="active">Home</a>
+<a href="/admin">Admin</a>
+<a href="/seller_login">Seller</a>
+<a href="/buyer_login">Buyer</a>
+
+</div>
+
+
+<div class="nav-right">
+
+<i class="fa fa-search"></i>
+
+<a class="nav-btn" href="/seller_register">Register</a>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+
+Upgrade E-Commerce  
+with <span>Purchasing Intelligence</span>
+
+</h1>
+
+<p>
+
+Our intelligent platform analyzes customer behavior using  
+Graph Neural Networks (TendGraphNet) and Sequential Models (SeqBehNet).  
+It discovers demand patterns, customer communities, and delivers  
+personalized product recommendations.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a class="btn-primary" href="#">Explore Platform</a>
+
+<a class="btn-outline" href="#">Learn More</a>
+
+</div>
+
+
+<div class="slider">
+
+<span class="active"></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-img">
+
+<img src="../static/images/purchase_ai.png">
+
+</div>
+
+</section>
+
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<h2>Platform Intelligence</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa fa-network-wired"></i>
+
+<h3>TendGraphNet</h3>
+
+<p>
+Graph neural network discovering customer communities and demand patterns.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<i class="fa fa-clock"></i>
+
+<h3>SeqBehNet</h3>
+
+<p>
+Sequential recommendation engine predicting next purchase behavior.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<i class="fa fa-chart-bar"></i>
+
+<h3>Demand Insights</h3>
+
+<p>
+Identifies high-demand products across regions and communities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<i class="fa fa-lightbulb"></i>
+
+<h3>Smart Recommendations</h3>
+
+<p>
+Generates personalized product recommendations for buyers.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+Purchasing Tendency Community Classification System © 2026
+
+</footer>
+
+
+</body>
+</html>

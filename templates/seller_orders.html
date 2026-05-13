@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Seller Orders - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.sidebar .logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.sidebar .logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:24px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+font-weight:600;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.header h2{
+color:#444;
+}
+
+.user-box{
+display:flex;
+align-items:center;
+gap:10px;
+color:#555;
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* PAGE TITLE */
+
+.page-title{
+font-size:22px;
+margin-bottom:25px;
+color:#333;
+}
+
+/* TABLE */
+
+.orders-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+border-radius:10px;
+
+overflow:hidden;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.06);
+
+}
+
+/* TABLE HEAD */
+
+.orders-table th{
+
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+
+color:white;
+
+text-align:left;
+
+padding:14px;
+
+font-weight:600;
+
+}
+
+/* TABLE CELLS */
+
+.orders-table td{
+
+padding:14px;
+
+border-bottom:1px solid #eee;
+
+}
+
+/* ROW HOVER */
+
+.orders-table tr:hover{
+
+background:#f4f1ff;
+
+}
+
+/* BADGES */
+
+.badge{
+
+padding:6px 12px;
+
+border-radius:20px;
+
+font-size:12px;
+
+font-weight:600;
+
+display:inline-block;
+
+}
+
+.badge-success{
+
+background:#2ecc71;
+color:white;
+
+}
+
+.badge-danger{
+
+background:#ff4d4d;
+color:white;
+
+}
+
+.badge-warning{
+
+background:#f39c12;
+color:white;
+
+}
+
+.badge-secondary{
+
+background:#95a5a6;
+color:white;
+
+}
+
+/* ACTION BUTTONS */
+
+.btn{
+
+padding:6px 10px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+color:white;
+
+margin-right:5px;
+
+transition:0.25s;
+
+}
+
+.btn-approve{
+
+background:#2ecc71;
+
+}
+
+.btn-approve:hover{
+
+background:#27ae60;
+
+transform:scale(1.05);
+
+}
+
+.btn-reject{
+
+background:#ff4d4d;
+
+}
+
+.btn-reject:hover{
+
+background:#e60023;
+
+transform:scale(1.05);
+
+}
+
+/* NO ACTION */
+
+.no-action{
+
+color:#888;
+font-size:13px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/seller_dashboard">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/add_product">
+<i class="fa fa-plus"></i> Add Product
+</a>
+
+<a href="/view_products">
+<i class="fa fa-box"></i> View Products
+</a>
+
+<a href="/seller_orders" class="active">
+<i class="fa fa-shopping-bag"></i> Orders
+</a>
+
+<a href="/seller_analytics">
+<i class="fa fa-chart-line"></i> Analytics
+</a>
+
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="header">
+
+<h2>Seller Dashboard</h2>
+
+<div class="user-box">
+<i class="fa fa-store"></i> Seller Panel
+</div>
+
+</div>
+
+
+<div class="content">
+
+<div class="page-title">
+<i class="fa fa-shopping-bag"></i> Seller Orders
+</div>
+
+
+<table class="orders-table">
+
+<tr>
+<th>Buyer</th>
+<th>Product</th>
+<th>Order Status</th>
+<th>Payment Status</th>
+<th>Action</th>
+</tr>
+
+{% for o in orders %}
+
+<tr>
+
+<td>{{o.buyer}}</td>
+
+<td>{{o.name}}</td>
+
+<td>
+
+{% if o.status == 'approved' %}
+<span class="badge badge-success">Approved</span>
+
+{% elif o.status == 'rejected' %}
+<span class="badge badge-danger">Rejected</span>
+
+{% else %}
+<span class="badge badge-warning">Pending</span>
+{% endif %}
+
+</td>
+
+
+<td>
+
+{% if o.payment_status == 'paid' %}
+<span class="badge badge-success">
+<i class="fa fa-check"></i> Paid
+</span>
+
+{% else %}
+<span class="badge badge-secondary">
+<i class="fa fa-clock"></i> Unpaid
+</span>
+
+{% endif %}
+
+</td>
+
+
+<td>
+
+{% if o.status == 'pending' %}
+
+<a href="/approve_order/{{o.id}}" class="btn btn-approve">
+<i class="fa fa-check"></i>
+</a>
+
+<a href="/reject_order/{{o.id}}" class="btn btn-reject">
+<i class="fa fa-times"></i>
+</a>
+
+{% else %}
+
+<span class="no-action">No Action</span>
+
+{% endif %}
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

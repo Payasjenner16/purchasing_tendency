@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Buyer Dashboard - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+/* BODY */
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:22px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.header h3{
+font-size:20px;
+}
+
+/* ACTION BUTTONS */
+
+.actions a{
+margin-left:10px;
+padding:10px 16px;
+border-radius:25px;
+text-decoration:none;
+font-size:14px;
+font-weight:500;
+color:white;
+}
+
+.btn-ai{
+background:#6c4df6;
+}
+
+.btn-cart{
+background:#00c2ff;
+}
+
+.btn-orders{
+background:#28a745;
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* PRODUCT GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:30px;
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+background:white;
+border-radius:14px;
+padding:20px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+border:2px solid #ecebff;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+
+.product-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* TITLE */
+
+.product-card h5{
+font-size:16px;
+margin-bottom:10px;
+}
+
+/* PRICE */
+
+.price{
+color:#6c4df6;
+font-weight:600;
+margin-bottom:15px;
+}
+
+/* ADD CART BUTTON */
+
+.cart-btn{
+display:inline-block;
+padding:10px 16px;
+background:#6c4df6;
+color:white;
+text-decoration:none;
+border-radius:25px;
+font-size:14px;
+}
+
+.cart-btn:hover{
+background:#5636e6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-user"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/buyer_dashboard" class="active">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/recommendations">
+<i class="fa fa-robot"></i> AI Recommendations
+</a>
+
+<a href="/cart">
+<i class="fa fa-shopping-cart"></i> My Cart
+</a>
+
+<a href="/buyer_orders">
+<i class="fa fa-box"></i> Order History
+</a>
+<a href="/seq">
+<i class="fa fa-project-diagram"></i> Sequential Model
+</a>
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<!-- HEADER -->
+
+<div class="header">
+
+<h3>
+<i class="fa fa-store"></i> Available Products
+</h3>
+
+<div class="actions">
+
+<a href="/recommendations" class="btn-ai">
+<i class="fa fa-robot"></i> AI Recommendations
+</a>
+
+<a href="/cart" class="btn-cart">
+<i class="fa fa-shopping-cart"></i> View Cart
+</a>
+
+<a href="/buyer_orders" class="btn-orders">
+<i class="fa fa-box"></i> Order History
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CONTENT -->
+
+<div class="content">
+
+<div class="products">
+
+{% for p in products %}
+
+<div class="product-card">
+
+<img src="/static/uploads/products/{{p.image}}">
+
+<h5>{{p.name}}</h5>
+
+<p class="price">₹ {{p.price}}</p>
+
+<a href="/add_to_cart/{{p.id}}" class="cart-btn">
+<i class="fa fa-cart-plus"></i> Add to Cart
+</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

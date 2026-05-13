@@ -1,0 +1,8 @@
+Flask>=2.3
+mysql-connector-python>=8.0
+numpy>=1.24
+torch>=2.0
+pandas>=1.5
+Flask-Mail>=0.9
+scikit-learn>=1.2
+torch-geometric>=2.3

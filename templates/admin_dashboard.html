@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TendGraph</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Segoe UI, sans-serif;
+        }
+
+        /* BODY */
+        body {
+            background: #f6f7fb;
+            display: flex;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 240px;
+            height: 100vh;
+            background: linear-gradient(160deg, #6c4df6, #8b73ff);
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .sidebar .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .sidebar .logo span {
+            color: #ddd;
+        }
+
+        /* SIDEBAR LINKS */
+        .sidebar a {
+            display: block;
+            padding: 12px 18px;
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            padding-left: 24px;
+        }
+
+        .sidebar a.active {
+            background: white;
+            color: #6c4df6;
+            font-weight: 600;
+        }
+
+        /* MAIN */
+        .main {
+            margin-left: 240px;
+            width: 100%;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .header h2 {
+            color: #444;
+        }
+
+        .admin-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #555;
+        }
+
+        /* CONTENT */
+
+        .content {
+            padding: 40px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h4 {
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: #6c4df6;
+            font-size: 30px;
+        }
+
+        /* SECTION TITLE */
+
+        .section-title {
+            margin-top: 35px;
+            margin-bottom: 15px;
+            color: #444;
+            font-size: 20px;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            margin-bottom: 40px;
+        }
+
+        /* TABLE HEADER */
+        table th {
+            background: linear-gradient(160deg, #6c4df6, #8b73ff);
+            color: white;
+            padding: 14px;
+            text-align: left;
+            border: 1px solid #e5e5e5;
+            font-weight: 600;
+        }
+
+        /* TABLE CELLS */
+
+        table td {
+            padding: 13px;
+            border: 1px solid #e5e5e5;
+            color: #444;
+        }
+
+        /* ROW HOVER */
+
+        table tr:hover {
+            background: #f4f1ff;
+        }
+
+        /* ZEBRA ROW */
+        table tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        /* DELETE BUTTON */
+        .delete-btn {
+            background: #ff4d4d;
+            color: white;
+            padding: 7px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .delete-btn:hover {
+            background: #e60023;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+        </div>
+
+        <a href="/admin_dashboard" class="active">
+            <i class="fa fa-home"></i> Dashboard
+        </a>
+        <a href="/admin_analytics">
+            <i class="fa fa-chart-bar"></i> Analytics
+        </a>
+        <a href="/">
+            <i class="fa fa-sign-out-alt"></i> Logout
+        </a>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <div class="header">
+            <h2>Admin Dashboard</h2>
+            <div class="admin-box">
+                <i class="fa fa-user-circle"></i>
+                Admin Panel
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- CARDS -->
+            <div class="cards">
+                <div class="card">
+                    <h4>Total Sellers</h4>
+                    <h2>{{ sellers|length }}</h2>
+                </div>
+
+                <div class="card">
+                    <h4>Total Buyers</h4>
+                    <h2>{{ buyers|length }}</h2>
+                </div>
+
+                <div class="card">
+                    <h4>System Users</h4>
+                    <h2>{{ sellers|length + buyers|length }}</h2>
+                </div>
+            </div>
+
+            <!-- SELLERS TABLE -->
+            <h3 class="section-title" id="sellers-section">Sellers</h3>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Shop</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                {% for s in sellers %}
+                <tr>
+                    <td>{{s.id}}</td>
+                    <td>{{s.name}}</td>
+                    <td>{{s.shopname}}</td>
+                    <td>{{s.email}}</td>
+                    <td>
+                        <a href="/remove_seller/{{s.id}}" class="delete-btn">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+
+            </table>
+
+            <!-- BUYERS TABLE -->
+            <h3 class="section-title" id="buyers-section">Buyers</h3>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                </tr>
+                {% for b in buyers %}
+                <tr>
+                    <td>{{b.id}}</td>
+                    <td>{{b.name}}</td>
+                    <td>{{b.email}}</td>
+                    <td>{{b.mobile}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

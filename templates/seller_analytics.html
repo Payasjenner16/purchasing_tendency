@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Seller Analytics - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.sidebar .logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.sidebar .logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:24px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+font-weight:600;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.header h2{
+color:#444;
+}
+
+.user-box{
+display:flex;
+align-items:center;
+gap:10px;
+color:#555;
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* SECTION */
+
+.section{
+margin-bottom:40px;
+}
+
+.section h4{
+margin-bottom:20px;
+font-size:20px;
+color:#333;
+}
+
+/* GRID */
+
+.grid2{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+/* CHART BOX */
+
+.chart-box{
+
+background:white;
+
+padding:25px;
+
+border-radius:14px;
+
+border:2px solid #ecebff;
+
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+
+position:relative;
+
+}
+
+/* TOP ACCENT */
+
+.chart-box:before{
+
+content:"";
+
+position:absolute;
+top:0;
+left:0;
+
+width:100%;
+height:4px;
+
+background:linear-gradient(90deg,#6c4df6,#8b73ff);
+
+border-radius:14px 14px 0 0;
+
+}
+
+.chart-box h5{
+margin-bottom:15px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+table th{
+background:#6c4df6;
+color:white;
+padding:10px;
+text-align:left;
+}
+
+table td{
+padding:10px;
+border-bottom:1px solid #eee;
+}
+
+/* PRODUCT SECTION */
+
+.product-section{
+margin-top:30px;
+background:white;
+padding:25px;
+border-radius:14px;
+border:2px solid #ecebff;
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* WARNING BOX */
+
+.warning{
+
+margin-top:20px;
+
+background:#fff7e6;
+
+border-left:5px solid #f39c12;
+
+padding:15px;
+
+border-radius:8px;
+
+}
+
+.warning ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+.warning li{
+margin-bottom:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/seller_dashboard">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/seller_analytics" class="active">
+<i class="fa fa-chart-line"></i> Sales Analytics
+</a>
+
+<a href="/seller_dash">
+<i class="fa fa-map-marker-alt"></i> Demand Map
+</a>
+
+<a href="/community2">
+<i class="fa fa-users"></i> Community Trends
+</a>
+
+<a href="/demand">
+<i class="fa fa-chart-bar"></i> Product Demand
+</a>
+
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="header">
+
+<h2>Seller Analytics</h2>
+
+<div class="user-box">
+<i class="fa fa-store"></i> Seller Panel
+</div>
+
+</div>
+
+<div class="content">
+
+<!-- SALES + DEMAND -->
+
+<div class="section">
+
+<h4>Product Performance Overview</h4>
+
+<div class="grid2">
+
+<div class="chart-box">
+<h5>My Product Sales</h5>
+<canvas id="salesChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h5>My Product Demand</h5>
+<canvas id="demandChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- LOCATION TREND -->
+
+<div class="section">
+
+<h4>Location Based Market Demand</h4>
+
+<div class="chart-box">
+<canvas id="locationChart"></canvas>
+</div>
+
+</div>
+
+
+<!-- PRODUCT LOCATION DEMAND -->
+
+<div class="section">
+
+<h4>Product Location Demand Analysis</h4>
+
+<p>This section shows how each product performs across different buyer locations.</p>
+
+{% set grouped = {} %}
+
+{% for row in product_location %}
+{% if row.product not in grouped %}
+{% set _ = grouped.update({row.product: []}) %}
+{% endif %}
+{% set _ = grouped[row.product].append(row) %}
+{% endfor %}
+
+{% for product, locations in grouped.items() %}
+
+<div class="product-section">
+
+<h5>{{product}}</h5>
+
+<div class="grid2">
+
+<div>
+
+<table>
+
+<tr>
+<th>Location</th>
+<th>Demand</th>
+</tr>
+
+{% for l in locations %}
+
+<tr>
+<td>{{l.location}}</td>
+<td>{{l.demand}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+<div>
+<canvas id="pie_{{loop.index}}"></canvas>
+</div>
+
+</div>
+
+<div class="warning">
+
+{% if locations|length > 1 %}
+
+<p>
+📈 <b>{{product}}</b> performs best in <b>{{locations[0].location}}</b>.
+Increase stock availability and run promotions in this region.
+</p>
+
+<p>
+📉 Demand is lowest in <b>{{locations[-1].location}}</b>.
+Recommended improvements:
+</p>
+
+<ul>
+
+<li>Improve product description and images.</li>
+<li>Offer limited-time discount campaigns.</li>
+<li>Create bundle offers with trending items.</li>
+<li>Run targeted ads for buyers in this location.</li>
+<li>Adjust pricing strategy to compete with similar products.</li>
+
+</ul>
+
+{% else %}
+
+<p>
+Currently this product has demand only in <b>{{locations[0].location}}</b>.
+Expanding marketing campaigns may help attract buyers from other regions.
+</p>
+
+{% endif %}
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+var sales_labels = {{ my_sales | map(attribute='name') | list | tojson | safe }};
+var sales_values = {{ my_sales | map(attribute='sales') | list | tojson | safe }};
+
+var demand_labels = {{ my_demand | map(attribute='name') | list | tojson | safe }};
+var demand_values = {{ my_demand | map(attribute='demand') | list | tojson | safe }};
+
+var location_labels = {{ location_trend | map(attribute='location') | list | tojson }};
+var location_values = {{ location_trend | map(attribute='demand') | list | tojson }};
+
+/* SALES */
+
+new Chart(document.getElementById("salesChart"),{
+type:"bar",
+data:{
+labels:sales_labels,
+datasets:[{
+label:"Sales",
+data:sales_values,
+backgroundColor:"#6c4df6"
+}]
+}
+});
+
+/* DEMAND */
+
+new Chart(document.getElementById("demandChart"),{
+type:"bar",
+data:{
+labels:demand_labels,
+datasets:[{
+label:"Demand",
+data:demand_values,
+backgroundColor:"#2ecc71"
+}]
+}
+});
+
+/* LOCATION */
+
+new Chart(document.getElementById("locationChart"),{
+type:"bar",
+data:{
+labels:location_labels,
+datasets:[{
+label:"Market Demand",
+data:location_values,
+backgroundColor:"#f39c12"
+}]
+},
+options:{
+indexAxis:'y'
+}
+});
+
+</script>
+
+</body>
+</html>

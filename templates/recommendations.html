@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Product Recommendations - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+/* BODY */
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:22px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+padding:20px 40px;
+font-size:20px;
+font-weight:600;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* DESCRIPTION */
+
+.desc{
+color:#666;
+margin-bottom:30px;
+max-width:900px;
+line-height:1.6;
+}
+
+/* MAP CARD */
+
+.map-card{
+background:white;
+padding:25px;
+border-radius:14px;
+border:2px solid #ecebff;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+margin-bottom:40px;
+position:relative;
+}
+
+.map-card:before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#6c4df6,#8b73ff);
+border-radius:14px 14px 0 0;
+}
+
+#map{
+height:420px;
+border-radius:10px;
+}
+
+/* PRODUCTS GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:30px;
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+background:white;
+border-radius:14px;
+padding:20px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+border:2px solid #ecebff;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.product-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.product-card h5{
+font-size:16px;
+margin-bottom:8px;
+}
+
+.price{
+color:#6c4df6;
+font-weight:600;
+margin-bottom:8px;
+}
+
+.shop{
+font-size:13px;
+color:#777;
+margin-bottom:15px;
+}
+
+/* BUTTON */
+
+.cart-btn{
+display:inline-block;
+padding:10px 16px;
+background:#6c4df6;
+color:white;
+text-decoration:none;
+border-radius:25px;
+font-size:14px;
+}
+
+.cart-btn:hover{
+background:#5636e6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-user"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/buyer_dashboard">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/recommendations" class="active">
+<i class="fa fa-robot"></i> AI Recommendations
+</a>
+
+<a href="/cart">
+<i class="fa fa-shopping-cart"></i> My Cart
+</a>
+
+<a href="/buyer_orders">
+<i class="fa fa-box"></i> Order History
+</a>
+<a href="/seq">
+<i class="fa fa-project-diagram"></i> Sequential Model
+</a>
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="header">
+AI Product Recommendations
+</div>
+
+
+<div class="content">
+
+<p class="desc">
+AI powered recommendations based on purchasing tendency, buyer activity, and community trends.
+These suggestions help you discover products that match your interests and popular demand.
+</p>
+
+
+<!-- MAP -->
+
+<div class="map-card">
+
+<div id="map"></div>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div class="products">
+
+{% for p in products %}
+
+<div class="product-card">
+
+<img src="/static/uploads/products/{{p.image}}">
+
+<h5>{{p.name}}</h5>
+
+<p class="price">₹ {{p.price}}</p>
+
+<p class="shop">
+Shop: {{p.shopname}}
+</p>
+
+<a href="/add_to_cart/{{p.id}}" class="cart-btn">
+<i class="fa fa-cart-plus"></i> Add to Cart
+</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+var map = L.map('map').setView([11.0168,76.9558],7);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+maxZoom:19
+}).addTo(map);
+
+var shops = {{ products | tojson }};
+
+shops.forEach(function(p){
+
+if(p.latitude && p.longitude){
+
+var marker = L.marker([p.latitude,p.longitude]).addTo(map);
+
+marker.bindPopup(
+
+"<b>"+p.shopname+"</b><br>"+
+p.address+"<br><br>"+
+"<b>Product:</b> "+p.name+"<br>"+
+"Price: ₹"+p.price
+
+);
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

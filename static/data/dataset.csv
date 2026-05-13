@@ -1,0 +1,1001 @@
+buyer_id,product,category,district,city,views,carts,purchases,sequence_step,community_id,demand_score,date
+299,Shoes,Fashion,Coimbatore,Salem,3,3,0,2,3,2.1,2025-05-18
+47,Mobile,Electronics,Coimbatore,Ahmedabad,9,1,0,2,2,3.9,2025-04-18
+296,Mixer,Appliances,Tiruchirappalli,Coimbatore,7,0,0,10,1,2.8,2025-06-10
+74,Refrigerator,Appliances,Chennai,Jaipur,7,0,1,5,4,3.1,2025-02-04
+298,Mixer,Appliances,Tiruppur,Salem,2,4,2,3,1,2.6,2025-06-24
+106,Refrigerator,Appliances,Tiruppur,Madurai,4,2,0,10,1,2.2,2025-01-17
+128,Saree,Fashion,Vellore,Lucknow,9,3,2,6,3,5.1,2025-04-27
+38,Headphones,Electronics,Tiruppur,Kolkata,4,0,2,8,3,2.2,2025-03-29
+21,Laptop,Electronics,Karur,Pune,9,3,1,8,4,4.8,2025-02-08
+297,Laptop,Electronics,Erode,Madurai,9,4,2,10,4,5.4,2025-03-31
+159,Saree,Fashion,Vellore,Madurai,2,0,2,2,1,1.4,2025-06-20
+182,Refrigerator,Appliances,Kanchipuram,Coimbatore,8,2,3,1,4,4.7,2025-03-30
+204,Headphones,Electronics,Chennai,Mumbai,10,0,3,3,2,4.9,2025-03-15
+221,T-Shirt,Fashion,Vellore,Ahmedabad,8,0,1,5,2,3.5,2025-05-21
+43,Mixer,Appliances,Erode,Coimbatore,5,5,3,4,2,4.4,2025-04-08
+145,Headphones,Electronics,Chennai,Kolkata,3,1,1,3,3,1.8,2025-05-31
+28,Mobile,Electronics,Thanjavur,Lucknow,3,3,2,3,5,2.7,2025-03-23
+32,Saree,Fashion,Tirunelveli,Ahmedabad,9,3,3,8,4,5.4,2025-01-27
+53,Smart Watch,Electronics,Madurai,Bangalore,2,1,3,10,1,2.0,2025-03-29
+193,Mobile,Electronics,Erode,Lucknow,10,1,0,2,2,4.3,2025-01-07
+246,Headphones,Electronics,Vellore,Bangalore,5,2,2,8,4,3.2,2025-01-30
+83,Saree,Fashion,Coimbatore,Madurai,5,0,1,5,4,2.3,2025-03-29
+153,Mixer,Appliances,Madurai,Madurai,1,1,2,1,5,1.3,2025-05-20
+278,Laptop,Electronics,Kanchipuram,Hyderabad,5,4,2,4,5,3.8,2025-04-02
+117,Mixer,Appliances,Thanjavur,Trichy,6,5,1,4,4,4.2,2025-02-19
+133,Smart Watch,Electronics,Thoothukudi,Chennai,9,3,2,5,4,5.1,2025-01-08
+113,Smart Watch,Electronics,Karur,Tiruppur,10,2,3,6,1,5.5,2025-03-31
+1,Laptop,Electronics,Erode,Mumbai,4,3,1,10,5,2.8,2025-05-04
+245,Saree,Fashion,Namakkal,Coimbatore,6,5,0,7,2,3.9,2025-01-31
+44,Headphones,Electronics,Coimbatore,Trichy,7,5,2,8,4,4.9,2025-04-12
+243,Headphones,Electronics,Madurai,Lucknow,3,1,0,3,5,1.5,2025-04-30
+72,Shoes,Fashion,Chennai,Chennai,3,4,1,2,5,2.7,2025-06-16
+167,T-Shirt,Fashion,Salem,Mumbai,4,1,0,9,2,1.9,2025-03-16
+265,TV,Electronics,Chennai,Tiruppur,9,3,1,8,5,4.8,2025-04-01
+3,T-Shirt,Fashion,Tiruppur,Jaipur,9,1,1,8,2,4.2,2025-01-05
+167,Headphones,Electronics,Thanjavur,Madurai,3,1,3,9,1,2.4,2025-01-31
+128,Mixer,Appliances,Karur,Trichy,9,4,3,9,1,5.7,2025-01-28
+227,Smart Watch,Electronics,Tiruppur,Kolkata,5,0,0,1,1,2.0,2025-05-24
+245,Shoes,Fashion,Thoothukudi,Delhi,10,4,1,9,5,5.5,2025-04-26
+214,Mixer,Appliances,Kanchipuram,Jaipur,4,5,2,8,2,3.7,2025-02-21
+109,Laptop,Electronics,Coimbatore,Coimbatore,7,3,2,7,1,4.3,2025-03-03
+49,TV,Electronics,Madurai,Delhi,2,1,2,8,2,1.7,2025-02-05
+174,T-Shirt,Fashion,Madurai,Madurai,8,1,1,9,4,3.8,2025-04-21
+284,T-Shirt,Fashion,Coimbatore,Madurai,4,2,2,1,3,2.8,2025-04-04
+263,Saree,Fashion,Tirunelveli,Pune,8,5,0,10,3,4.7,2025-05-13
+139,Laptop,Electronics,Coimbatore,Delhi,2,1,0,1,2,1.1,2025-03-11
+254,Headphones,Electronics,Tirunelveli,Hyderabad,7,5,2,9,5,4.9,2025-05-18
+138,Shoes,Fashion,Karur,Madurai,2,2,0,7,1,1.4,2025-02-16
+63,Mobile,Electronics,Thanjavur,Salem,2,2,0,2,3,1.4,2025-02-26
+23,Saree,Fashion,Kanchipuram,Tiruppur,1,2,3,10,2,1.9,2025-03-10
+157,Mixer,Appliances,Salem,Chennai,4,0,1,4,3,1.9,2025-02-16
+10,Mixer,Appliances,Tiruppur,Coimbatore,4,2,3,5,3,3.1,2025-02-15
+244,TV,Electronics,Thoothukudi,Jaipur,1,0,0,4,5,0.4,2025-05-22
+158,Smart Watch,Electronics,Dindigul,Kolkata,8,0,3,7,5,4.1,2025-05-20
+178,Smart Watch,Electronics,Namakkal,Tiruppur,4,2,1,3,4,2.5,2025-06-30
+29,Mobile,Electronics,Dindigul,Madurai,3,0,0,7,2,1.2,2025-03-07
+236,Laptop,Electronics,Thanjavur,Mumbai,7,4,2,5,1,4.6,2025-06-27
+166,Headphones,Electronics,Chennai,Delhi,3,2,3,6,5,2.7,2025-04-04
+43,Smart Watch,Electronics,Erode,Hyderabad,1,2,1,6,4,1.3,2025-01-01
+46,Saree,Fashion,Tiruchirappalli,Jaipur,5,4,1,2,3,3.5,2025-01-02
+44,Headphones,Electronics,Tirunelveli,Chennai,7,4,0,5,2,4.0,2025-03-18
+75,Refrigerator,Appliances,Karur,Pune,9,1,3,3,3,4.8,2025-05-07
+259,Mobile,Electronics,Thoothukudi,Madurai,9,5,3,3,5,6.0,2025-05-10
+54,Refrigerator,Appliances,Coimbatore,Chennai,1,5,1,3,3,2.2,2025-01-11
+251,T-Shirt,Fashion,Dindigul,Chennai,8,4,0,9,2,4.4,2025-06-10
+270,TV,Electronics,Thoothukudi,Tiruppur,1,3,0,9,1,1.3,2025-05-09
+236,Laptop,Electronics,Namakkal,Delhi,8,2,0,4,2,3.8,2025-03-02
+102,Saree,Fashion,Kanchipuram,Coimbatore,7,0,3,1,5,3.7,2025-03-15
+291,Laptop,Electronics,Salem,Coimbatore,10,1,2,5,5,4.9,2025-06-27
+251,Headphones,Electronics,Vellore,Delhi,1,3,0,2,2,1.3,2025-06-22
+160,TV,Electronics,Vellore,Kolkata,9,2,3,9,2,5.1,2025-01-31
+199,Laptop,Electronics,Vellore,Bangalore,8,0,2,8,3,3.8,2025-05-10
+68,Smart Watch,Electronics,Madurai,Madurai,4,0,0,5,3,1.6,2025-05-15
+202,Refrigerator,Appliances,Thoothukudi,Pune,9,2,0,8,4,4.2,2025-03-01
+214,Mobile,Electronics,Dindigul,Kolkata,3,0,3,5,2,2.1,2025-04-14
+204,Shoes,Fashion,Namakkal,Pune,7,2,0,6,3,3.4,2025-01-01
+34,Laptop,Electronics,Kanchipuram,Madurai,4,5,0,5,3,3.1,2025-03-16
+144,T-Shirt,Fashion,Erode,Tiruppur,7,4,0,5,1,4.0,2025-04-20
+224,Laptop,Electronics,Dindigul,Tiruppur,1,5,2,4,3,2.5,2025-02-08
+282,Mixer,Appliances,Karur,Ahmedabad,6,1,2,7,5,3.3,2025-01-08
+26,Smart Watch,Electronics,Vellore,Lucknow,2,0,3,5,4,1.7,2025-02-05
+134,Mixer,Appliances,Tirunelveli,Pune,3,1,3,5,3,2.4,2025-03-14
+83,T-Shirt,Fashion,Tiruppur,Coimbatore,4,2,3,2,2,3.1,2025-04-11
+219,Laptop,Electronics,Tiruppur,Mumbai,4,4,3,6,4,3.7,2025-04-26
+164,Headphones,Electronics,Coimbatore,Hyderabad,9,1,1,9,1,4.2,2025-03-29
+269,Smart Watch,Electronics,Kanchipuram,Chennai,6,2,1,7,4,3.3,2025-04-16
+185,Smart Watch,Electronics,Karur,Chennai,7,2,2,5,5,4.0,2025-05-08
+229,Headphones,Electronics,Coimbatore,Delhi,9,4,1,7,4,5.1,2025-03-05
+1,T-Shirt,Fashion,Chennai,Ahmedabad,5,0,1,10,4,2.3,2025-05-02
+78,Laptop,Electronics,Vellore,Mumbai,7,4,3,4,2,4.9,2025-01-28
+120,Mixer,Appliances,Coimbatore,Jaipur,2,5,3,1,2,3.2,2025-01-11
+58,Refrigerator,Appliances,Madurai,Coimbatore,1,5,2,9,4,2.5,2025-03-06
+6,Laptop,Electronics,Tirunelveli,Delhi,2,2,1,10,1,1.7,2025-02-27
+121,Mixer,Appliances,Erode,Coimbatore,5,3,2,8,5,3.5,2025-03-04
+100,Mixer,Appliances,Thoothukudi,Coimbatore,4,0,3,1,1,2.5,2025-03-20
+253,Saree,Fashion,Tiruchirappalli,Coimbatore,7,0,2,6,2,3.4,2025-04-19
+150,Mobile,Electronics,Erode,Coimbatore,6,5,3,4,1,4.8,2025-04-12
+114,Mixer,Appliances,Tiruchirappalli,Delhi,2,1,3,4,4,2.0,2025-02-19
+29,TV,Electronics,Thanjavur,Hyderabad,5,0,3,8,4,2.9,2025-02-27
+27,Refrigerator,Appliances,Tiruchirappalli,Chennai,3,3,0,3,4,2.1,2025-06-02
+85,Mobile,Electronics,Kanchipuram,Madurai,3,3,3,2,1,3.0,2025-03-22
+170,Shoes,Fashion,Chennai,Delhi,4,1,3,7,3,2.8,2025-06-20
+64,Saree,Fashion,Coimbatore,Delhi,3,0,0,6,4,1.2,2025-01-21
+26,Mixer,Appliances,Karur,Salem,4,3,2,7,1,3.1,2025-03-21
+211,Saree,Fashion,Tiruchirappalli,Pune,4,2,3,8,1,3.1,2025-04-04
+100,Smart Watch,Electronics,Chennai,Kolkata,7,0,3,1,3,3.7,2025-01-17
+163,Laptop,Electronics,Salem,Pune,10,2,2,1,3,5.2,2025-06-07
+239,TV,Electronics,Chennai,Salem,5,0,0,2,4,2.0,2025-03-01
+156,T-Shirt,Fashion,Madurai,Tiruppur,5,3,3,3,1,3.8,2025-05-08
+41,Headphones,Electronics,Namakkal,Pune,10,1,2,6,5,4.9,2025-04-28
+283,Mixer,Appliances,Tiruchirappalli,Ahmedabad,4,3,1,1,4,2.8,2025-01-17
+44,Mixer,Appliances,Kanchipuram,Bangalore,6,1,3,5,5,3.6,2025-01-19
+214,Smart Watch,Electronics,Thoothukudi,Kolkata,2,3,3,4,2,2.6,2025-02-14
+151,Saree,Fashion,Thoothukudi,Jaipur,10,5,1,2,3,5.8,2025-06-20
+127,TV,Electronics,Salem,Madurai,10,2,2,4,4,5.2,2025-03-08
+34,Headphones,Electronics,Salem,Tiruppur,4,1,1,4,3,2.2,2025-05-29
+53,T-Shirt,Fashion,Dindigul,Trichy,5,1,1,8,1,2.6,2025-01-26
+62,Mobile,Electronics,Kanchipuram,Pune,8,1,3,5,2,4.4,2025-01-11
+230,Mobile,Electronics,Kanchipuram,Bangalore,4,4,1,9,2,3.1,2025-04-06
+112,Refrigerator,Appliances,Coimbatore,Coimbatore,5,5,0,10,3,3.5,2025-06-02
+105,Mobile,Electronics,Chennai,Mumbai,6,2,1,1,5,3.3,2025-03-07
+17,Mobile,Electronics,Madurai,Lucknow,6,3,2,2,2,3.9,2025-03-21
+274,Saree,Fashion,Tirunelveli,Bangalore,9,3,0,9,2,4.5,2025-04-12
+27,Laptop,Electronics,Tirunelveli,Delhi,3,3,2,5,4,2.7,2025-06-20
+208,TV,Electronics,Tirunelveli,Chennai,10,2,3,4,4,5.5,2025-04-04
+187,Smart Watch,Electronics,Tirunelveli,Bangalore,1,3,1,7,5,1.6,2025-01-24
+294,Saree,Fashion,Chennai,Jaipur,3,1,0,7,1,1.5,2025-02-06
+88,Refrigerator,Appliances,Madurai,Pune,6,5,1,3,5,4.2,2025-03-14
+23,Laptop,Electronics,Karur,Trichy,2,3,3,5,2,2.6,2025-02-20
+208,Saree,Fashion,Coimbatore,Tiruppur,6,0,3,3,2,3.3,2025-06-08
+81,Refrigerator,Appliances,Thanjavur,Mumbai,4,3,1,7,5,2.8,2025-01-11
+20,T-Shirt,Fashion,Tiruchirappalli,Madurai,6,0,1,1,5,2.7,2025-02-19
+158,Shoes,Fashion,Tiruppur,Salem,2,3,3,5,4,2.6,2025-06-10
+92,Refrigerator,Appliances,Dindigul,Pune,4,3,3,9,4,3.4,2025-04-25
+92,Mobile,Electronics,Vellore,Mumbai,1,4,3,10,4,2.5,2025-04-25
+227,Saree,Fashion,Madurai,Pune,7,0,0,6,1,2.8,2025-04-21
+262,Mixer,Appliances,Chennai,Coimbatore,9,5,0,2,3,5.1,2025-02-03
+57,Laptop,Electronics,Dindigul,Trichy,1,4,3,1,1,2.5,2025-02-04
+180,Smart Watch,Electronics,Karur,Tiruppur,3,3,2,4,1,2.7,2025-02-12
+131,Refrigerator,Appliances,Kanchipuram,Lucknow,5,1,2,8,2,2.9,2025-03-12
+19,Mixer,Appliances,Thanjavur,Jaipur,8,1,2,6,3,4.1,2025-03-02
+87,Smart Watch,Electronics,Dindigul,Tiruppur,3,3,1,6,4,2.4,2025-03-13
+267,TV,Electronics,Dindigul,Salem,2,4,0,8,5,2.0,2025-04-03
+189,Refrigerator,Appliances,Thoothukudi,Trichy,2,2,3,5,4,2.3,2025-04-06
+25,Refrigerator,Appliances,Karur,Bangalore,3,2,2,4,2,2.4,2025-04-24
+18,TV,Electronics,Dindigul,Salem,9,2,2,6,1,4.8,2025-05-30
+251,Smart Watch,Electronics,Tirunelveli,Jaipur,3,2,3,1,2,2.7,2025-04-04
+156,Smart Watch,Electronics,Chennai,Chennai,10,5,0,10,3,5.5,2025-01-01
+105,Laptop,Electronics,Tirunelveli,Lucknow,9,2,1,10,2,4.5,2025-03-19
+50,Shoes,Fashion,Madurai,Chennai,10,3,1,3,4,5.2,2025-03-04
+288,Laptop,Electronics,Tirunelveli,Trichy,3,5,2,1,1,3.3,2025-03-09
+85,Shoes,Fashion,Thanjavur,Tiruppur,10,5,3,8,2,6.4,2025-05-13
+54,Mobile,Electronics,Tirunelveli,Hyderabad,1,0,0,3,1,0.4,2025-03-02
+260,Mobile,Electronics,Madurai,Ahmedabad,10,4,1,9,5,5.5,2025-02-21
+276,T-Shirt,Fashion,Coimbatore,Delhi,10,1,2,1,4,4.9,2025-06-10
+116,Mobile,Electronics,Coimbatore,Madurai,7,3,3,8,2,4.6,2025-06-17
+137,Laptop,Electronics,Coimbatore,Pune,5,1,0,5,1,2.3,2025-06-27
+8,Mixer,Appliances,Salem,Coimbatore,7,5,2,2,5,4.9,2025-02-25
+169,Headphones,Electronics,Madurai,Madurai,5,1,1,4,4,2.6,2025-03-25
+224,Refrigerator,Appliances,Vellore,Salem,4,3,3,1,1,3.4,2025-05-16
+88,Smart Watch,Electronics,Tirunelveli,Lucknow,10,2,1,2,5,4.9,2025-05-30
+15,Headphones,Electronics,Coimbatore,Lucknow,1,0,0,6,2,0.4,2025-02-11
+187,Mobile,Electronics,Thoothukudi,Bangalore,1,1,0,2,5,0.7,2025-01-12
+106,Smart Watch,Electronics,Kanchipuram,Salem,9,5,0,2,2,5.1,2025-04-09
+245,Smart Watch,Electronics,Namakkal,Tiruppur,2,0,0,2,3,0.8,2025-06-12
+11,Laptop,Electronics,Salem,Pune,3,0,1,7,3,1.5,2025-03-28
+258,Shoes,Fashion,Thoothukudi,Trichy,5,2,0,6,5,2.6,2025-04-05
+51,Saree,Fashion,Karur,Ahmedabad,5,4,0,7,5,3.2,2025-01-08
+148,Shoes,Fashion,Tiruppur,Lucknow,8,5,0,2,5,4.7,2025-02-25
+252,Headphones,Electronics,Salem,Trichy,7,0,1,1,3,3.1,2025-01-14
+296,Laptop,Electronics,Vellore,Lucknow,8,5,1,9,3,5.0,2025-03-30
+288,Headphones,Electronics,Vellore,Hyderabad,5,1,1,2,4,2.6,2025-01-29
+13,Laptop,Electronics,Tirunelveli,Tiruppur,6,2,0,2,4,3.0,2025-04-12
+195,Shoes,Fashion,Tirunelveli,Tiruppur,4,2,2,9,2,2.8,2025-05-20
+231,Smart Watch,Electronics,Erode,Lucknow,8,1,0,9,2,3.5,2025-03-25
+65,Mixer,Appliances,Vellore,Madurai,6,1,3,10,2,3.6,2025-03-07
+80,Shoes,Fashion,Tiruppur,Mumbai,8,5,1,5,5,5.0,2025-03-10
+168,Headphones,Electronics,Thanjavur,Jaipur,4,5,2,3,2,3.7,2025-03-31
+78,Smart Watch,Electronics,Madurai,Coimbatore,5,5,0,4,4,3.5,2025-01-27
+144,Headphones,Electronics,Tirunelveli,Delhi,5,5,2,2,1,4.1,2025-02-20
+152,Smart Watch,Electronics,Chennai,Ahmedabad,7,3,0,4,5,3.7,2025-04-22
+221,Saree,Fashion,Thanjavur,Madurai,1,1,2,1,2,1.3,2025-04-14
+93,Refrigerator,Appliances,Namakkal,Mumbai,10,5,3,10,2,6.4,2025-06-20
+125,Laptop,Electronics,Salem,Coimbatore,8,3,2,2,4,4.7,2025-06-29
+266,T-Shirt,Fashion,Vellore,Kolkata,3,2,3,10,4,2.7,2025-01-06
+279,Headphones,Electronics,Namakkal,Kolkata,6,0,3,1,3,3.3,2025-01-28
+278,Smart Watch,Electronics,Tiruppur,Pune,3,5,1,10,4,3.0,2025-01-26
+211,Smart Watch,Electronics,Dindigul,Trichy,8,4,0,9,3,4.4,2025-04-05
+29,Saree,Fashion,Tirunelveli,Jaipur,4,5,1,10,3,3.4,2025-02-01
+181,TV,Electronics,Chennai,Chennai,5,3,3,7,4,3.8,2025-01-20
+201,Refrigerator,Appliances,Salem,Madurai,5,0,1,9,2,2.3,2025-04-13
+288,Saree,Fashion,Kanchipuram,Trichy,4,1,1,4,4,2.2,2025-01-18
+182,Smart Watch,Electronics,Vellore,Delhi,3,2,3,3,4,2.7,2025-05-21
+2,Smart Watch,Electronics,Dindigul,Delhi,5,5,3,3,4,4.4,2025-04-20
+44,TV,Electronics,Erode,Kolkata,6,1,2,7,5,3.3,2025-05-05
+272,Shoes,Fashion,Chennai,Bangalore,3,2,3,6,2,2.7,2025-05-25
+52,Shoes,Fashion,Tiruchirappalli,Bangalore,10,0,0,5,3,4.0,2025-06-17
+207,Refrigerator,Appliances,Karur,Kolkata,3,1,1,3,2,1.8,2025-03-30
+254,Mixer,Appliances,Dindigul,Tiruppur,3,4,0,5,2,2.4,2025-05-21
+136,Smart Watch,Electronics,Dindigul,Tiruppur,9,0,3,9,1,4.5,2025-01-30
+74,T-Shirt,Fashion,Vellore,Jaipur,4,1,3,8,4,2.8,2025-01-15
+240,Saree,Fashion,Tiruppur,Lucknow,4,3,1,3,3,2.8,2025-01-02
+39,Refrigerator,Appliances,Namakkal,Kolkata,8,5,2,7,4,5.3,2025-04-06
+262,Headphones,Electronics,Chennai,Lucknow,6,5,0,6,1,3.9,2025-01-12
+49,Saree,Fashion,Tiruchirappalli,Madurai,8,1,0,3,3,3.5,2025-04-17
+284,Shoes,Fashion,Salem,Ahmedabad,6,3,1,7,3,3.6,2025-03-29
+140,Mobile,Electronics,Namakkal,Kolkata,5,2,2,6,5,3.2,2025-04-14
+154,Mixer,Appliances,Karur,Bangalore,6,1,3,4,3,3.6,2025-03-26
+280,Headphones,Electronics,Karur,Chennai,10,5,0,9,4,5.5,2025-04-13
+31,Refrigerator,Appliances,Coimbatore,Chennai,1,3,2,4,4,1.9,2025-01-12
+109,Mixer,Appliances,Thanjavur,Hyderabad,9,4,3,10,1,5.7,2025-06-10
+52,Mobile,Electronics,Coimbatore,Coimbatore,8,5,1,1,4,5.0,2025-02-16
+216,Mobile,Electronics,Tiruppur,Madurai,6,1,2,5,2,3.3,2025-03-08
+291,Mobile,Electronics,Thanjavur,Coimbatore,6,0,3,1,4,3.3,2025-05-29
+8,Mixer,Appliances,Thanjavur,Madurai,1,0,3,8,1,1.3,2025-04-14
+43,T-Shirt,Fashion,Vellore,Trichy,10,4,1,9,1,5.5,2025-04-16
+112,Saree,Fashion,Tirunelveli,Chennai,4,1,0,2,1,1.9,2025-01-03
+96,Laptop,Electronics,Salem,Madurai,3,3,0,4,4,2.1,2025-05-26
+256,Mobile,Electronics,Thoothukudi,Trichy,6,5,1,5,5,4.2,2025-01-22
+200,Saree,Fashion,Chennai,Chennai,5,0,0,10,1,2.0,2025-01-04
+162,TV,Electronics,Namakkal,Salem,5,5,1,10,1,3.8,2025-05-05
+186,Shoes,Fashion,Vellore,Coimbatore,10,5,3,3,1,6.4,2025-02-12
+171,Headphones,Electronics,Karur,Trichy,7,3,3,5,5,4.6,2025-04-26
+159,TV,Electronics,Namakkal,Lucknow,5,0,2,3,5,2.6,2025-01-04
+232,Refrigerator,Appliances,Tirunelveli,Coimbatore,7,1,3,10,2,4.0,2025-04-07
+148,TV,Electronics,Salem,Ahmedabad,1,2,2,10,1,1.6,2025-02-10
+274,Headphones,Electronics,Namakkal,Trichy,10,1,2,8,3,4.9,2025-05-21
+30,Laptop,Electronics,Karur,Ahmedabad,9,4,3,4,3,5.7,2025-02-21
+236,T-Shirt,Fashion,Kanchipuram,Delhi,8,5,1,1,4,5.0,2025-05-31
+267,Mixer,Appliances,Karur,Bangalore,2,4,2,7,5,2.6,2025-03-01
+99,TV,Electronics,Tiruppur,Lucknow,9,2,3,4,2,5.1,2025-02-21
+265,Laptop,Electronics,Erode,Lucknow,3,5,2,6,4,3.3,2025-05-25
+42,Headphones,Electronics,Erode,Salem,4,0,3,6,4,2.5,2025-01-28
+49,Headphones,Electronics,Erode,Delhi,6,4,0,10,1,3.6,2025-05-13
+219,Mobile,Electronics,Thanjavur,Lucknow,4,4,3,5,3,3.7,2025-02-24
+93,Laptop,Electronics,Salem,Salem,8,4,1,6,2,4.7,2025-01-10
+33,T-Shirt,Fashion,Chennai,Jaipur,2,0,0,8,4,0.8,2025-04-05
+260,Refrigerator,Appliances,Salem,Pune,7,0,0,4,1,2.8,2025-05-25
+132,T-Shirt,Fashion,Erode,Mumbai,3,3,1,3,1,2.4,2025-02-26
+248,Shoes,Fashion,Namakkal,Tiruppur,1,4,0,5,5,1.6,2025-01-13
+226,Mobile,Electronics,Karur,Chennai,2,1,2,5,5,1.7,2025-02-20
+195,Laptop,Electronics,Salem,Ahmedabad,8,2,2,6,4,4.4,2025-02-01
+19,Headphones,Electronics,Kanchipuram,Coimbatore,8,1,1,8,2,3.8,2025-01-04
+198,Headphones,Electronics,Kanchipuram,Madurai,4,0,2,8,1,2.2,2025-02-05
+188,Mobile,Electronics,Erode,Salem,2,3,2,8,1,2.3,2025-03-01
+225,Headphones,Electronics,Madurai,Madurai,6,1,0,9,2,2.7,2025-04-26
+152,Headphones,Electronics,Tiruchirappalli,Hyderabad,5,3,3,5,5,3.8,2025-01-07
+79,Shoes,Fashion,Coimbatore,Pune,3,2,3,8,1,2.7,2025-04-27
+104,Mixer,Appliances,Tiruppur,Kolkata,1,5,1,2,3,2.2,2025-03-15
+213,Shoes,Fashion,Kanchipuram,Mumbai,7,2,1,7,3,3.7,2025-01-25
+175,Headphones,Electronics,Madurai,Coimbatore,1,5,2,8,5,2.5,2025-01-05
+185,Mixer,Appliances,Karur,Salem,3,3,0,5,2,2.1,2025-05-15
+268,T-Shirt,Fashion,Salem,Lucknow,1,3,1,3,2,1.6,2025-02-16
+90,Smart Watch,Electronics,Namakkal,Bangalore,3,1,0,8,3,1.5,2025-06-05
+267,Smart Watch,Electronics,Thanjavur,Delhi,3,4,1,1,1,2.7,2025-02-21
+8,T-Shirt,Fashion,Erode,Delhi,1,4,2,8,1,2.2,2025-06-13
+84,T-Shirt,Fashion,Tiruchirappalli,Hyderabad,8,1,2,6,1,4.1,2025-05-25
+62,Shoes,Fashion,Erode,Jaipur,10,4,0,9,1,5.2,2025-04-25
+254,Shoes,Fashion,Thanjavur,Trichy,4,2,3,5,1,3.1,2025-01-16
+94,Saree,Fashion,Chennai,Mumbai,9,0,1,4,5,3.9,2025-01-23
+100,Headphones,Electronics,Tiruppur,Salem,2,2,2,1,1,2.0,2025-01-08
+180,TV,Electronics,Tiruppur,Mumbai,1,4,3,8,1,2.5,2025-06-29
+144,Laptop,Electronics,Coimbatore,Kolkata,3,0,2,10,5,1.8,2025-05-07
+117,Laptop,Electronics,Kanchipuram,Hyderabad,2,0,3,10,2,1.7,2025-05-19
+270,Headphones,Electronics,Madurai,Salem,10,3,3,7,4,5.8,2025-01-05
+289,Mobile,Electronics,Erode,Ahmedabad,7,0,2,6,4,3.4,2025-03-03
+217,Shoes,Fashion,Erode,Jaipur,7,4,0,6,2,4.0,2025-02-07
+11,Mobile,Electronics,Coimbatore,Pune,6,0,1,4,5,2.7,2025-04-21
+18,Smart Watch,Electronics,Karur,Tiruppur,3,3,3,1,1,3.0,2025-04-27
+129,Refrigerator,Appliances,Dindigul,Jaipur,5,5,2,10,1,4.1,2025-01-10
+178,Laptop,Electronics,Tiruchirappalli,Chennai,9,0,3,2,3,4.5,2025-03-15
+226,Headphones,Electronics,Coimbatore,Kolkata,2,0,2,9,2,1.4,2025-06-01
+125,Laptop,Electronics,Kanchipuram,Ahmedabad,9,1,2,5,3,4.5,2025-05-28
+104,Laptop,Electronics,Thanjavur,Madurai,9,2,3,4,4,5.1,2025-05-26
+125,Mixer,Appliances,Thanjavur,Kolkata,6,3,2,5,1,3.9,2025-05-01
+123,Shoes,Fashion,Thanjavur,Ahmedabad,4,1,3,6,2,2.8,2025-01-04
+12,Shoes,Fashion,Salem,Delhi,9,2,3,5,1,5.1,2025-02-25
+226,Headphones,Electronics,Vellore,Coimbatore,9,0,2,9,4,4.2,2025-01-16
+181,Shoes,Fashion,Dindigul,Madurai,2,4,1,7,3,2.3,2025-02-09
+138,Headphones,Electronics,Namakkal,Salem,4,4,2,2,4,3.4,2025-05-13
+255,Headphones,Electronics,Tirunelveli,Trichy,7,0,0,10,1,2.8,2025-05-21
+57,T-Shirt,Fashion,Namakkal,Trichy,10,1,3,10,5,5.2,2025-03-13
+201,T-Shirt,Fashion,Salem,Madurai,8,5,3,5,3,5.6,2025-04-01
+228,Mixer,Appliances,Dindigul,Pune,9,4,3,8,4,5.7,2025-01-02
+298,TV,Electronics,Karur,Hyderabad,3,4,2,10,4,3.0,2025-04-22
+219,Smart Watch,Electronics,Namakkal,Lucknow,2,2,2,6,2,2.0,2025-03-04
+160,Mobile,Electronics,Thanjavur,Tiruppur,1,0,2,5,5,1.0,2025-05-08
+180,Mixer,Appliances,Tirunelveli,Kolkata,10,3,3,1,5,5.8,2025-04-02
+257,Saree,Fashion,Tiruppur,Mumbai,1,5,0,7,3,1.9,2025-01-26
+226,T-Shirt,Fashion,Kanchipuram,Mumbai,9,4,1,8,4,5.1,2025-04-18
+160,Refrigerator,Appliances,Madurai,Pune,10,2,0,6,1,4.6,2025-03-23
+269,Mixer,Appliances,Thoothukudi,Pune,3,0,2,7,2,1.8,2025-05-11
+55,TV,Electronics,Tirunelveli,Hyderabad,9,1,1,10,5,4.2,2025-01-16
+284,Shoes,Fashion,Thoothukudi,Ahmedabad,10,5,0,1,3,5.5,2025-01-03
+90,Mobile,Electronics,Thanjavur,Chennai,5,3,0,1,2,2.9,2025-06-21
+295,Saree,Fashion,Namakkal,Coimbatore,9,4,2,9,2,5.4,2025-05-17
+15,Smart Watch,Electronics,Madurai,Hyderabad,7,4,0,9,1,4.0,2025-05-13
+7,Laptop,Electronics,Namakkal,Kolkata,2,1,3,7,1,2.0,2025-06-06
+51,Refrigerator,Appliances,Erode,Delhi,6,1,1,1,3,3.0,2025-02-13
+113,Refrigerator,Appliances,Vellore,Lucknow,2,2,1,1,1,1.7,2025-04-09
+23,T-Shirt,Fashion,Chennai,Lucknow,10,0,3,4,2,4.9,2025-03-03
+130,Headphones,Electronics,Chennai,Tiruppur,10,1,2,5,4,4.9,2025-04-27
+159,Saree,Fashion,Dindigul,Madurai,2,1,3,4,4,2.0,2025-05-30
+96,T-Shirt,Fashion,Coimbatore,Hyderabad,8,0,1,6,4,3.5,2025-02-13
+207,Mobile,Electronics,Coimbatore,Pune,5,3,2,7,3,3.5,2025-05-17
+146,Laptop,Electronics,Tiruppur,Mumbai,2,3,2,4,4,2.3,2025-04-10
+124,Shoes,Fashion,Salem,Coimbatore,4,3,0,6,2,2.5,2025-01-07
+240,Headphones,Electronics,Tiruppur,Salem,2,1,2,9,4,1.7,2025-02-02
+107,Smart Watch,Electronics,Tiruchirappalli,Madurai,3,2,2,7,5,2.4,2025-04-14
+226,TV,Electronics,Tiruchirappalli,Salem,8,4,1,3,3,4.7,2025-04-26
+63,Refrigerator,Appliances,Tirunelveli,Lucknow,6,4,1,4,2,3.9,2025-05-11
+75,Mixer,Appliances,Thoothukudi,Trichy,2,4,2,1,5,2.6,2025-04-09
+56,TV,Electronics,Thoothukudi,Hyderabad,1,3,0,6,2,1.3,2025-03-01
+148,Laptop,Electronics,Tiruchirappalli,Bangalore,9,2,2,2,2,4.8,2025-03-21
+91,Headphones,Electronics,Tirunelveli,Salem,7,2,2,3,3,4.0,2025-04-29
+206,Mobile,Electronics,Kanchipuram,Ahmedabad,6,5,2,8,2,4.5,2025-01-07
+208,Shoes,Fashion,Coimbatore,Delhi,2,1,2,4,1,1.7,2025-06-05
+21,Mobile,Electronics,Tiruchirappalli,Trichy,10,1,3,3,4,5.2,2025-03-19
+267,Mixer,Appliances,Thanjavur,Salem,5,5,1,10,4,3.8,2025-02-28
+300,TV,Electronics,Kanchipuram,Chennai,7,5,2,5,1,4.9,2025-01-29
+45,Refrigerator,Appliances,Chennai,Trichy,1,1,0,4,3,0.7,2025-03-23
+227,T-Shirt,Fashion,Salem,Jaipur,7,5,1,6,4,4.6,2025-01-24
+263,Shoes,Fashion,Tiruppur,Chennai,9,5,3,4,4,6.0,2025-06-23
+280,Headphones,Electronics,Thoothukudi,Salem,8,1,0,5,2,3.5,2025-05-24
+211,Headphones,Electronics,Tiruchirappalli,Chennai,4,4,2,6,3,3.4,2025-02-13
+122,Laptop,Electronics,Madurai,Hyderabad,4,5,2,8,4,3.7,2025-06-25
+69,Smart Watch,Electronics,Madurai,Tiruppur,1,4,3,6,3,2.5,2025-06-14
+87,Headphones,Electronics,Erode,Coimbatore,10,4,1,9,4,5.5,2025-01-31
+185,Headphones,Electronics,Namakkal,Mumbai,10,3,3,5,1,5.8,2025-01-30
+159,Saree,Fashion,Kanchipuram,Delhi,4,0,0,4,1,1.6,2025-03-19
+87,Saree,Fashion,Vellore,Kolkata,2,1,2,6,3,1.7,2025-05-26
+289,Mixer,Appliances,Vellore,Trichy,2,0,0,2,3,0.8,2025-05-05
+5,TV,Electronics,Tirunelveli,Kolkata,2,5,3,9,3,3.2,2025-02-18
+41,Shoes,Fashion,Dindigul,Lucknow,2,5,2,5,2,2.9,2025-06-17
+270,Headphones,Electronics,Namakkal,Hyderabad,1,0,3,6,2,1.3,2025-03-17
+183,Headphones,Electronics,Thoothukudi,Lucknow,2,5,2,7,2,2.9,2025-03-25
+30,Shoes,Fashion,Tiruppur,Tiruppur,4,2,1,5,2,2.5,2025-04-05
+256,Mobile,Electronics,Kanchipuram,Chennai,2,4,3,8,4,2.9,2025-02-25
+227,Headphones,Electronics,Madurai,Madurai,5,4,0,3,2,3.2,2025-02-28
+17,T-Shirt,Fashion,Vellore,Mumbai,2,0,3,6,1,1.7,2025-02-25
+216,Refrigerator,Appliances,Salem,Bangalore,9,3,1,1,5,4.8,2025-06-19
+152,Shoes,Fashion,Dindigul,Salem,2,3,0,3,4,1.7,2025-02-15
+166,Mobile,Electronics,Thanjavur,Mumbai,8,4,2,2,5,5.0,2025-05-01
+170,Mixer,Appliances,Tirunelveli,Lucknow,8,3,1,2,1,4.4,2025-06-08
+176,Refrigerator,Appliances,Erode,Kolkata,5,4,3,3,3,4.1,2025-06-18
+297,Mixer,Appliances,Dindigul,Madurai,1,1,1,2,2,1.0,2025-04-25
+203,Shoes,Fashion,Erode,Jaipur,9,4,3,10,4,5.7,2025-03-03
+130,TV,Electronics,Kanchipuram,Mumbai,2,1,1,2,2,1.4,2025-05-21
+116,Laptop,Electronics,Thoothukudi,Kolkata,4,4,2,9,4,3.4,2025-02-28
+209,Mixer,Appliances,Thoothukudi,Jaipur,10,5,0,10,1,5.5,2025-05-31
+201,Laptop,Electronics,Dindigul,Madurai,8,1,0,2,4,3.5,2025-05-12
+30,Mixer,Appliances,Karur,Bangalore,3,1,3,6,5,2.4,2025-02-05
+236,T-Shirt,Fashion,Chennai,Chennai,4,0,2,10,2,2.2,2025-06-29
+289,TV,Electronics,Tirunelveli,Tiruppur,2,5,1,10,2,2.6,2025-01-23
+63,Laptop,Electronics,Thoothukudi,Salem,6,1,2,1,3,3.3,2025-03-29
+52,Smart Watch,Electronics,Thoothukudi,Kolkata,6,4,2,10,3,4.2,2025-01-12
+182,Shoes,Fashion,Chennai,Tiruppur,9,2,0,4,3,4.2,2025-06-22
+38,Smart Watch,Electronics,Coimbatore,Trichy,8,0,3,8,1,4.1,2025-01-06
+129,TV,Electronics,Namakkal,Coimbatore,3,1,2,7,2,2.1,2025-06-21
+248,Mixer,Appliances,Chennai,Pune,5,3,0,8,5,2.9,2025-02-08
+244,Mobile,Electronics,Thanjavur,Salem,1,0,1,10,4,0.7,2025-06-15
+169,Headphones,Electronics,Namakkal,Lucknow,8,3,1,2,3,4.4,2025-05-13
+185,Mixer,Appliances,Thanjavur,Lucknow,4,2,1,4,2,2.5,2025-01-12
+172,Saree,Fashion,Tirunelveli,Tiruppur,6,4,3,6,1,4.5,2025-04-01
+75,Refrigerator,Appliances,Chennai,Mumbai,8,2,1,10,1,4.1,2025-04-28
+294,Headphones,Electronics,Coimbatore,Jaipur,5,3,2,6,5,3.5,2025-03-09
+293,Mixer,Appliances,Kanchipuram,Jaipur,10,1,0,4,4,4.3,2025-01-25
+175,Laptop,Electronics,Namakkal,Trichy,6,2,1,2,3,3.3,2025-02-06
+31,Shoes,Fashion,Erode,Salem,9,5,1,7,3,5.4,2025-05-21
+70,Shoes,Fashion,Kanchipuram,Mumbai,6,3,2,6,2,3.9,2025-03-02
+87,Smart Watch,Electronics,Tirunelveli,Kolkata,1,5,3,10,3,2.8,2025-04-12
+175,Refrigerator,Appliances,Thoothukudi,Delhi,2,1,2,10,5,1.7,2025-03-06
+240,Laptop,Electronics,Thanjavur,Hyderabad,4,4,0,10,3,2.8,2025-03-19
+132,Shoes,Fashion,Namakkal,Kolkata,7,5,0,3,3,4.3,2025-03-23
+205,Mixer,Appliances,Tiruchirappalli,Madurai,1,1,2,4,1,1.3,2025-01-06
+124,Saree,Fashion,Namakkal,Jaipur,4,4,2,2,2,3.4,2025-06-15
+3,Mobile,Electronics,Coimbatore,Bangalore,3,4,0,6,2,2.4,2025-05-28
+168,Smart Watch,Electronics,Dindigul,Pune,5,4,0,4,3,3.2,2025-01-08
+172,Mobile,Electronics,Madurai,Chennai,8,3,2,1,1,4.7,2025-04-17
+289,Saree,Fashion,Vellore,Salem,10,3,2,1,3,5.5,2025-01-04
+74,Shoes,Fashion,Madurai,Bangalore,1,3,2,3,2,1.9,2025-01-05
+79,Mixer,Appliances,Tirunelveli,Pune,2,2,2,10,5,2.0,2025-05-18
+159,Refrigerator,Appliances,Thoothukudi,Lucknow,10,2,1,8,1,4.9,2025-03-08
+130,Mixer,Appliances,Erode,Jaipur,8,4,2,5,2,5.0,2025-05-16
+206,Mobile,Electronics,Dindigul,Trichy,9,3,0,3,2,4.5,2025-04-03
+285,Laptop,Electronics,Coimbatore,Chennai,1,4,1,9,2,1.9,2025-05-20
+15,Headphones,Electronics,Thoothukudi,Hyderabad,5,4,2,3,5,3.8,2025-02-15
+109,Shoes,Fashion,Tiruchirappalli,Coimbatore,4,3,3,7,4,3.4,2025-03-30
+31,Shoes,Fashion,Coimbatore,Trichy,1,0,0,7,3,0.4,2025-06-15
+129,Smart Watch,Electronics,Kanchipuram,Tiruppur,10,3,3,4,1,5.8,2025-04-07
+218,Mobile,Electronics,Tiruchirappalli,Mumbai,5,5,3,4,3,4.4,2025-04-01
+70,TV,Electronics,Thanjavur,Trichy,5,3,1,8,3,3.2,2025-02-10
+232,TV,Electronics,Chennai,Kolkata,5,0,2,3,3,2.6,2025-03-05
+94,Smart Watch,Electronics,Namakkal,Tiruppur,10,0,1,1,4,4.3,2025-04-03
+155,T-Shirt,Fashion,Karur,Bangalore,3,2,0,1,2,1.8,2025-02-08
+47,Headphones,Electronics,Coimbatore,Trichy,9,5,2,8,4,5.7,2025-02-13
+104,T-Shirt,Fashion,Kanchipuram,Pune,6,5,3,10,2,4.8,2025-01-09
+25,Mobile,Electronics,Thanjavur,Ahmedabad,1,1,1,2,1,1.0,2025-06-28
+92,Shoes,Fashion,Vellore,Hyderabad,2,0,0,7,1,0.8,2025-05-15
+111,Smart Watch,Electronics,Tiruppur,Pune,9,1,0,2,3,3.9,2025-05-08
+101,Smart Watch,Electronics,Chennai,Delhi,2,2,1,2,1,1.7,2025-03-10
+279,Mixer,Appliances,Salem,Chennai,1,3,2,1,4,1.9,2025-03-25
+163,TV,Electronics,Namakkal,Madurai,9,2,3,7,4,5.1,2025-03-10
+3,Mixer,Appliances,Tirunelveli,Trichy,7,3,1,7,2,4.0,2025-04-09
+60,Smart Watch,Electronics,Thoothukudi,Lucknow,10,4,2,4,2,5.8,2025-04-07
+282,Laptop,Electronics,Tirunelveli,Madurai,10,0,0,6,4,4.0,2025-05-23
+176,Shoes,Fashion,Vellore,Madurai,8,4,0,8,5,4.4,2025-06-15
+202,Refrigerator,Appliances,Namakkal,Coimbatore,9,3,1,6,1,4.8,2025-04-07
+136,Mixer,Appliances,Coimbatore,Coimbatore,5,4,2,4,5,3.8,2025-05-20
+73,TV,Electronics,Tiruppur,Lucknow,8,5,2,10,2,5.3,2025-05-03
+79,Laptop,Electronics,Tiruppur,Hyderabad,9,2,1,4,2,4.5,2025-04-04
+210,Saree,Fashion,Erode,Ahmedabad,3,5,0,7,1,2.7,2025-04-03
+155,Headphones,Electronics,Erode,Pune,5,3,0,9,5,2.9,2025-06-19
+245,Saree,Fashion,Salem,Kolkata,2,2,3,2,4,2.3,2025-06-27
+122,Headphones,Electronics,Dindigul,Hyderabad,9,1,0,8,5,3.9,2025-04-04
+103,Refrigerator,Appliances,Karur,Ahmedabad,6,4,2,1,5,4.2,2025-03-06
+166,Mobile,Electronics,Thanjavur,Hyderabad,10,2,0,9,3,4.6,2025-03-20
+104,TV,Electronics,Coimbatore,Jaipur,4,2,3,8,1,3.1,2025-06-12
+22,Headphones,Electronics,Kanchipuram,Chennai,7,2,2,7,3,4.0,2025-04-24
+99,TV,Electronics,Erode,Mumbai,7,3,2,10,2,4.3,2025-04-09
+195,Refrigerator,Appliances,Erode,Salem,6,0,1,2,4,2.7,2025-01-19
+289,T-Shirt,Fashion,Kanchipuram,Tiruppur,9,3,3,1,1,5.4,2025-06-14
+204,Saree,Fashion,Tirunelveli,Kolkata,8,5,3,2,4,5.6,2025-02-15
+21,Saree,Fashion,Dindigul,Mumbai,3,4,0,7,5,2.4,2025-02-21
+40,TV,Electronics,Karur,Kolkata,9,2,3,2,2,5.1,2025-01-31
+29,Refrigerator,Appliances,Coimbatore,Salem,1,0,3,10,4,1.3,2025-02-25
+209,Smart Watch,Electronics,Tiruppur,Madurai,6,3,0,10,2,3.3,2025-04-17
+141,Mobile,Electronics,Tiruchirappalli,Jaipur,3,2,2,3,5,2.4,2025-01-02
+203,Mixer,Appliances,Tirunelveli,Delhi,5,0,2,5,5,2.6,2025-06-19
+277,Mixer,Appliances,Salem,Delhi,7,5,0,7,4,4.3,2025-03-05
+251,TV,Electronics,Chennai,Mumbai,5,1,1,6,4,2.6,2025-05-18
+161,Refrigerator,Appliances,Tiruchirappalli,Kolkata,3,2,2,9,1,2.4,2025-06-30
+113,Mobile,Electronics,Thanjavur,Salem,9,0,3,1,3,4.5,2025-03-24
+228,Saree,Fashion,Karur,Lucknow,5,1,1,8,4,2.6,2025-06-06
+71,Smart Watch,Electronics,Tirunelveli,Salem,4,0,1,2,1,1.9,2025-06-13
+114,Laptop,Electronics,Chennai,Tiruppur,10,3,1,3,4,5.2,2025-05-24
+239,TV,Electronics,Madurai,Trichy,4,4,1,9,1,3.1,2025-02-22
+218,Laptop,Electronics,Tirunelveli,Mumbai,4,0,0,5,4,1.6,2025-06-18
+299,Headphones,Electronics,Chennai,Hyderabad,1,5,1,5,2,2.2,2025-04-25
+110,Shoes,Fashion,Salem,Tiruppur,9,5,1,6,5,5.4,2025-03-08
+280,Headphones,Electronics,Erode,Ahmedabad,4,3,0,5,2,2.5,2025-02-09
+59,Laptop,Electronics,Thoothukudi,Hyderabad,4,3,1,6,4,2.8,2025-04-21
+251,Mobile,Electronics,Dindigul,Jaipur,6,0,1,2,3,2.7,2025-05-15
+299,Shoes,Fashion,Tiruchirappalli,Kolkata,1,3,0,5,5,1.3,2025-03-13
+17,Mixer,Appliances,Vellore,Delhi,2,1,1,10,3,1.4,2025-02-28
+89,Refrigerator,Appliances,Erode,Mumbai,10,0,0,5,1,4.0,2025-02-08
+153,Shoes,Fashion,Tiruchirappalli,Pune,6,3,3,3,1,4.2,2025-04-04
+202,Laptop,Electronics,Thoothukudi,Jaipur,9,3,0,3,5,4.5,2025-01-29
+213,Saree,Fashion,Tiruppur,Lucknow,1,0,0,7,2,0.4,2025-01-25
+47,Refrigerator,Appliances,Thoothukudi,Coimbatore,6,0,2,6,2,3.0,2025-02-11
+123,Shoes,Fashion,Salem,Hyderabad,1,5,3,2,1,2.8,2025-03-08
+126,Laptop,Electronics,Tiruppur,Jaipur,3,3,2,6,4,2.7,2025-01-31
+207,Headphones,Electronics,Tiruppur,Delhi,10,4,0,4,3,5.2,2025-04-04
+49,Mixer,Appliances,Thoothukudi,Salem,4,1,1,9,2,2.2,2025-05-17
+118,Mobile,Electronics,Karur,Trichy,2,0,3,10,2,1.7,2025-06-29
+57,Laptop,Electronics,Chennai,Ahmedabad,3,1,2,10,5,2.1,2025-04-11
+263,TV,Electronics,Dindigul,Lucknow,10,0,0,4,2,4.0,2025-02-25
+156,Mobile,Electronics,Coimbatore,Chennai,4,0,2,10,2,2.2,2025-02-25
+46,Shoes,Fashion,Chennai,Pune,2,3,1,7,1,2.0,2025-04-16
+102,Smart Watch,Electronics,Madurai,Trichy,3,5,1,3,2,3.0,2025-03-30
+270,Smart Watch,Electronics,Chennai,Trichy,6,5,0,1,4,3.9,2025-05-03
+211,Shoes,Fashion,Tiruchirappalli,Salem,2,4,0,1,3,2.0,2025-06-10
+133,Laptop,Electronics,Karur,Kolkata,6,4,1,8,2,3.9,2025-06-22
+223,TV,Electronics,Namakkal,Trichy,1,5,3,10,2,2.8,2025-06-24
+102,T-Shirt,Fashion,Coimbatore,Trichy,9,2,0,4,2,4.2,2025-03-06
+203,Refrigerator,Appliances,Kanchipuram,Kolkata,8,4,1,1,4,4.7,2025-05-28
+219,Shoes,Fashion,Tiruchirappalli,Coimbatore,7,3,0,6,5,3.7,2025-06-22
+211,TV,Electronics,Thanjavur,Chennai,1,2,3,8,4,1.9,2025-01-29
+202,Refrigerator,Appliances,Erode,Jaipur,5,3,1,2,3,3.2,2025-02-24
+209,Saree,Fashion,Erode,Bangalore,10,0,2,3,4,4.6,2025-03-11
+200,Mixer,Appliances,Dindigul,Coimbatore,4,0,1,7,2,1.9,2025-01-11
+158,TV,Electronics,Madurai,Mumbai,6,1,2,10,4,3.3,2025-03-31
+5,Saree,Fashion,Namakkal,Salem,6,4,1,7,5,3.9,2025-02-11
+52,Mobile,Electronics,Vellore,Lucknow,3,0,1,5,3,1.5,2025-06-18
+264,Mixer,Appliances,Madurai,Tiruppur,9,5,3,7,1,6.0,2025-03-06
+31,Refrigerator,Appliances,Salem,Pune,6,3,2,7,5,3.9,2025-03-20
+194,Saree,Fashion,Chennai,Tiruppur,8,2,0,2,5,3.8,2025-06-24
+248,Saree,Fashion,Thoothukudi,Lucknow,5,4,1,1,3,3.5,2025-04-28
+201,Headphones,Electronics,Tiruchirappalli,Lucknow,1,2,1,9,1,1.3,2025-05-28
+14,Headphones,Electronics,Dindigul,Trichy,10,5,2,5,5,6.1,2025-03-03
+185,T-Shirt,Fashion,Karur,Coimbatore,9,3,0,7,4,4.5,2025-06-13
+103,TV,Electronics,Namakkal,Chennai,6,1,3,6,2,3.6,2025-05-17
+153,Mixer,Appliances,Thoothukudi,Jaipur,1,1,2,5,1,1.3,2025-02-13
+165,T-Shirt,Fashion,Salem,Delhi,6,5,1,4,5,4.2,2025-05-02
+137,Saree,Fashion,Erode,Ahmedabad,7,0,2,7,4,3.4,2025-03-23
+23,Laptop,Electronics,Tiruppur,Salem,4,4,3,3,3,3.7,2025-04-15
+141,Headphones,Electronics,Dindigul,Jaipur,5,4,3,7,1,4.1,2025-06-21
+231,T-Shirt,Fashion,Tiruppur,Trichy,6,5,3,2,3,4.8,2025-03-15
+36,Mobile,Electronics,Erode,Lucknow,1,4,2,5,2,2.2,2025-04-03
+91,Mixer,Appliances,Namakkal,Trichy,2,4,3,5,2,2.9,2025-01-29
+96,Laptop,Electronics,Tirunelveli,Ahmedabad,7,3,2,6,3,4.3,2025-05-08
+174,Headphones,Electronics,Dindigul,Tiruppur,9,5,3,3,2,6.0,2025-03-15
+222,Laptop,Electronics,Namakkal,Lucknow,7,0,0,4,5,2.8,2025-06-20
+114,T-Shirt,Fashion,Karur,Salem,4,4,2,3,2,3.4,2025-06-23
+68,Smart Watch,Electronics,Kanchipuram,Chennai,9,0,2,7,3,4.2,2025-06-16
+110,T-Shirt,Fashion,Karur,Lucknow,10,2,0,9,3,4.6,2025-06-04
+265,Smart Watch,Electronics,Dindigul,Lucknow,5,0,2,6,1,2.6,2025-01-21
+141,Laptop,Electronics,Chennai,Kolkata,2,2,1,3,4,1.7,2025-06-11
+115,Mixer,Appliances,Chennai,Jaipur,1,3,0,2,4,1.3,2025-04-30
+275,TV,Electronics,Tiruchirappalli,Jaipur,6,2,1,5,5,3.3,2025-02-23
+33,Mobile,Electronics,Karur,Jaipur,4,1,0,7,3,1.9,2025-03-10
+116,TV,Electronics,Tirunelveli,Ahmedabad,2,4,0,10,4,2.0,2025-05-12
+69,Mobile,Electronics,Dindigul,Delhi,6,4,2,8,5,4.2,2025-01-19
+207,T-Shirt,Fashion,Tiruchirappalli,Pune,8,5,3,4,1,5.6,2025-06-07
+102,Headphones,Electronics,Thoothukudi,Tiruppur,5,1,0,1,4,2.3,2025-05-13
+33,Smart Watch,Electronics,Thoothukudi,Trichy,5,1,2,10,1,2.9,2025-01-06
+286,Shoes,Fashion,Namakkal,Salem,4,3,0,9,3,2.5,2025-06-14
+182,Shoes,Fashion,Erode,Delhi,3,4,2,1,2,3.0,2025-01-27
+187,T-Shirt,Fashion,Karur,Bangalore,1,5,3,2,2,2.8,2025-03-29
+271,Saree,Fashion,Karur,Pune,8,0,2,3,1,3.8,2025-05-02
+143,Refrigerator,Appliances,Tiruchirappalli,Pune,5,4,3,1,2,4.1,2025-03-06
+7,Mixer,Appliances,Madurai,Trichy,7,5,3,3,2,5.2,2025-04-22
+105,Laptop,Electronics,Chennai,Chennai,4,5,3,8,1,4.0,2025-01-23
+106,Refrigerator,Appliances,Erode,Lucknow,9,0,2,8,4,4.2,2025-05-24
+65,Mobile,Electronics,Tirunelveli,Tiruppur,4,1,2,2,5,2.5,2025-01-27
+87,Smart Watch,Electronics,Karur,Bangalore,8,3,3,1,4,5.0,2025-05-26
+61,T-Shirt,Fashion,Thoothukudi,Tiruppur,4,5,3,10,2,4.0,2025-05-01
+290,Saree,Fashion,Thoothukudi,Mumbai,10,3,0,1,4,4.9,2025-02-28
+25,Smart Watch,Electronics,Kanchipuram,Mumbai,1,1,0,1,4,0.7,2025-01-01
+135,T-Shirt,Fashion,Kanchipuram,Jaipur,4,1,0,10,4,1.9,2025-06-13
+74,Mobile,Electronics,Vellore,Trichy,3,3,0,2,2,2.1,2025-01-27
+16,Mixer,Appliances,Coimbatore,Jaipur,3,4,2,1,1,3.0,2025-04-08
+149,Mixer,Appliances,Thoothukudi,Chennai,2,4,0,9,5,2.0,2025-06-19
+260,Saree,Fashion,Tiruppur,Madurai,7,5,0,1,2,4.3,2025-02-23
+280,Saree,Fashion,Dindigul,Ahmedabad,4,0,1,10,1,1.9,2025-01-29
+189,Mixer,Appliances,Coimbatore,Madurai,6,5,0,2,1,3.9,2025-03-03
+99,TV,Electronics,Madurai,Kolkata,5,2,2,10,3,3.2,2025-06-05
+267,Mobile,Electronics,Coimbatore,Coimbatore,2,0,0,10,2,0.8,2025-06-27
+16,T-Shirt,Fashion,Kanchipuram,Trichy,8,3,1,1,1,4.4,2025-01-21
+130,Headphones,Electronics,Thanjavur,Delhi,7,0,1,5,2,3.1,2025-04-24
+243,TV,Electronics,Tirunelveli,Bangalore,6,0,2,8,2,3.0,2025-02-11
+119,Refrigerator,Appliances,Chennai,Ahmedabad,6,2,1,1,3,3.3,2025-05-18
+273,Mixer,Appliances,Karur,Trichy,6,2,0,6,1,3.0,2025-03-03
+276,Headphones,Electronics,Tirunelveli,Coimbatore,2,0,2,6,1,1.4,2025-03-28
+209,Laptop,Electronics,Tiruppur,Chennai,8,1,1,9,2,3.8,2025-06-16
+61,Mixer,Appliances,Tiruchirappalli,Delhi,2,5,1,5,4,2.6,2025-01-04
+175,Headphones,Electronics,Thoothukudi,Madurai,10,3,1,7,2,5.2,2025-03-14
+36,TV,Electronics,Dindigul,Delhi,1,0,1,10,2,0.7,2025-06-08
+8,Refrigerator,Appliances,Salem,Bangalore,2,5,3,2,5,3.2,2025-01-17
+231,Laptop,Electronics,Tiruppur,Bangalore,6,0,1,9,3,2.7,2025-05-07
+49,Headphones,Electronics,Tirunelveli,Ahmedabad,2,2,2,3,4,2.0,2025-06-28
+180,Saree,Fashion,Chennai,Ahmedabad,6,2,1,2,2,3.3,2025-02-27
+160,Shoes,Fashion,Namakkal,Mumbai,5,4,0,2,2,3.2,2025-01-19
+46,TV,Electronics,Vellore,Bangalore,3,0,1,7,3,1.5,2025-01-15
+182,Refrigerator,Appliances,Coimbatore,Delhi,10,1,0,5,2,4.3,2025-01-04
+86,Shoes,Fashion,Madurai,Pune,9,5,1,6,3,5.4,2025-03-06
+100,Mixer,Appliances,Salem,Trichy,2,1,1,1,2,1.4,2025-04-08
+26,Smart Watch,Electronics,Dindigul,Tiruppur,7,2,1,5,1,3.7,2025-05-01
+60,Laptop,Electronics,Salem,Chennai,7,2,1,8,4,3.7,2025-05-01
+89,Laptop,Electronics,Coimbatore,Ahmedabad,8,4,3,8,4,5.3,2025-01-31
+228,Smart Watch,Electronics,Coimbatore,Mumbai,7,3,0,5,3,3.7,2025-01-18
+289,Saree,Fashion,Coimbatore,Jaipur,4,2,0,8,2,2.2,2025-02-26
+88,Refrigerator,Appliances,Tirunelveli,Jaipur,7,0,0,4,5,2.8,2025-01-15
+68,Mixer,Appliances,Coimbatore,Kolkata,6,1,0,8,4,2.7,2025-03-09
+62,Laptop,Electronics,Coimbatore,Mumbai,8,5,2,6,1,5.3,2025-03-13
+241,Saree,Fashion,Tiruppur,Chennai,8,2,1,9,1,4.1,2025-06-10
+187,Mobile,Electronics,Karur,Kolkata,9,5,1,10,2,5.4,2025-06-20
+9,Headphones,Electronics,Namakkal,Salem,7,2,0,3,2,3.4,2025-04-05
+72,Refrigerator,Appliances,Vellore,Mumbai,8,5,0,5,4,4.7,2025-01-10
+85,Smart Watch,Electronics,Thanjavur,Mumbai,5,5,2,7,1,4.1,2025-01-17
+109,Mobile,Electronics,Coimbatore,Kolkata,6,3,1,9,4,3.6,2025-04-06
+165,Refrigerator,Appliances,Tiruchirappalli,Delhi,4,1,3,5,2,2.8,2025-04-27
+83,Mobile,Electronics,Tirunelveli,Coimbatore,7,1,2,10,3,3.7,2025-01-06
+198,Smart Watch,Electronics,Thanjavur,Kolkata,1,1,2,9,5,1.3,2025-05-02
+70,Headphones,Electronics,Salem,Ahmedabad,5,1,0,3,5,2.3,2025-02-08
+232,Refrigerator,Appliances,Tiruchirappalli,Ahmedabad,6,0,1,2,5,2.7,2025-02-12
+27,T-Shirt,Fashion,Namakkal,Hyderabad,5,4,1,7,1,3.5,2025-03-10
+38,T-Shirt,Fashion,Coimbatore,Delhi,2,0,2,3,4,1.4,2025-02-14
+190,Mixer,Appliances,Vellore,Mumbai,7,2,0,9,5,3.4,2025-05-08
+93,Mixer,Appliances,Coimbatore,Lucknow,9,1,3,10,4,4.8,2025-03-06
+242,TV,Electronics,Tiruppur,Delhi,4,3,2,2,1,3.1,2025-06-23
+167,Smart Watch,Electronics,Vellore,Pune,6,0,3,3,4,3.3,2025-06-23
+190,Smart Watch,Electronics,Tiruppur,Ahmedabad,7,0,1,3,2,3.1,2025-04-13
+137,Shoes,Fashion,Karur,Pune,7,5,3,4,2,5.2,2025-02-02
+241,Laptop,Electronics,Kanchipuram,Ahmedabad,1,4,1,7,1,1.9,2025-06-07
+247,Refrigerator,Appliances,Erode,Madurai,8,2,2,6,2,4.4,2025-04-22
+128,Mobile,Electronics,Coimbatore,Coimbatore,3,3,2,9,2,2.7,2025-03-16
+233,Refrigerator,Appliances,Dindigul,Delhi,4,2,2,2,5,2.8,2025-02-11
+15,Refrigerator,Appliances,Thanjavur,Jaipur,1,1,0,9,3,0.7,2025-04-16
+90,Laptop,Electronics,Thoothukudi,Mumbai,1,1,0,3,2,0.7,2025-01-02
+241,TV,Electronics,Coimbatore,Bangalore,4,0,0,4,2,1.6,2025-01-23
+171,Shoes,Fashion,Erode,Delhi,2,4,2,8,3,2.6,2025-04-17
+135,Mobile,Electronics,Salem,Bangalore,2,2,1,10,1,1.7,2025-01-17
+79,Headphones,Electronics,Madurai,Mumbai,6,2,3,9,1,3.9,2025-06-04
+34,T-Shirt,Fashion,Tiruchirappalli,Delhi,7,2,0,8,1,3.4,2025-01-19
+242,Refrigerator,Appliances,Karur,Kolkata,3,1,3,10,1,2.4,2025-03-01
+235,Refrigerator,Appliances,Tiruchirappalli,Tiruppur,7,1,0,4,1,3.1,2025-05-30
+118,Smart Watch,Electronics,Tiruppur,Jaipur,5,4,3,1,1,4.1,2025-03-26
+99,Mobile,Electronics,Tiruchirappalli,Coimbatore,4,4,2,8,5,3.4,2025-06-26
+174,Headphones,Electronics,Madurai,Hyderabad,4,2,2,4,4,2.8,2025-01-16
+151,TV,Electronics,Chennai,Trichy,7,2,2,6,1,4.0,2025-06-05
+16,Mobile,Electronics,Madurai,Hyderabad,6,4,1,4,4,3.9,2025-06-11
+39,Smart Watch,Electronics,Dindigul,Madurai,6,0,2,9,3,3.0,2025-05-02
+114,Laptop,Electronics,Tirunelveli,Kolkata,2,4,3,5,5,2.9,2025-01-18
+162,Saree,Fashion,Karur,Madurai,6,3,3,9,4,4.2,2025-04-06
+286,Refrigerator,Appliances,Coimbatore,Coimbatore,1,0,3,3,1,1.3,2025-03-13
+267,Headphones,Electronics,Salem,Coimbatore,2,3,0,6,4,1.7,2025-01-18
+70,Laptop,Electronics,Thoothukudi,Madurai,3,3,0,1,3,2.1,2025-01-14
+87,Mixer,Appliances,Erode,Hyderabad,2,5,0,10,4,2.3,2025-05-17
+235,Smart Watch,Electronics,Thoothukudi,Pune,3,3,3,2,2,3.0,2025-04-03
+95,Mixer,Appliances,Thoothukudi,Tiruppur,2,0,2,8,2,1.4,2025-04-09
+55,Refrigerator,Appliances,Thoothukudi,Mumbai,5,3,3,4,4,3.8,2025-02-03
+165,Mixer,Appliances,Salem,Jaipur,6,1,0,3,5,2.7,2025-05-01
+1,Shoes,Fashion,Dindigul,Mumbai,3,5,2,7,1,3.3,2025-06-18
+20,Smart Watch,Electronics,Karur,Trichy,10,2,0,10,1,4.6,2025-03-07
+202,Shoes,Fashion,Erode,Delhi,4,2,2,10,3,2.8,2025-04-06
+126,T-Shirt,Fashion,Chennai,Tiruppur,5,0,1,7,5,2.3,2025-06-23
+224,Mobile,Electronics,Salem,Jaipur,3,1,2,6,4,2.1,2025-06-17
+164,TV,Electronics,Dindigul,Salem,3,1,2,6,2,2.1,2025-01-15
+241,Headphones,Electronics,Karur,Salem,9,5,0,8,3,5.1,2025-05-21
+168,Saree,Fashion,Erode,Mumbai,4,5,2,2,1,3.7,2025-01-17
+102,Mobile,Electronics,Coimbatore,Lucknow,1,1,2,8,1,1.3,2025-01-18
+164,Saree,Fashion,Tirunelveli,Delhi,7,2,3,10,4,4.3,2025-06-13
+266,Shoes,Fashion,Thanjavur,Tiruppur,5,5,2,10,5,4.1,2025-01-28
+107,Laptop,Electronics,Chennai,Tiruppur,8,3,3,4,2,5.0,2025-06-20
+292,Shoes,Fashion,Dindigul,Tiruppur,9,2,0,1,4,4.2,2025-05-26
+264,T-Shirt,Fashion,Tirunelveli,Bangalore,1,5,1,9,3,2.2,2025-02-17
+40,Shoes,Fashion,Tiruchirappalli,Pune,2,1,0,3,4,1.1,2025-04-21
+257,T-Shirt,Fashion,Erode,Jaipur,4,2,2,8,5,2.8,2025-02-17
+283,Mobile,Electronics,Namakkal,Jaipur,3,4,3,3,1,3.3,2025-02-12
+258,Laptop,Electronics,Kanchipuram,Chennai,10,2,0,9,1,4.6,2025-02-23
+16,Smart Watch,Electronics,Tiruppur,Mumbai,9,3,1,3,4,4.8,2025-02-06
+263,T-Shirt,Fashion,Thanjavur,Delhi,3,4,2,7,2,3.0,2025-03-01
+131,Saree,Fashion,Karur,Pune,1,0,0,4,5,0.4,2025-02-12
+237,Smart Watch,Electronics,Thanjavur,Hyderabad,9,1,1,10,1,4.2,2025-02-21
+227,Refrigerator,Appliances,Kanchipuram,Jaipur,4,2,3,8,1,3.1,2025-01-14
+279,Laptop,Electronics,Madurai,Pune,2,4,3,3,2,2.9,2025-04-28
+224,Shoes,Fashion,Tiruchirappalli,Mumbai,7,5,1,7,3,4.6,2025-02-11
+162,TV,Electronics,Vellore,Bangalore,5,1,1,4,5,2.6,2025-02-06
+243,Laptop,Electronics,Tirunelveli,Kolkata,9,2,1,10,4,4.5,2025-04-23
+87,TV,Electronics,Vellore,Lucknow,8,4,1,3,5,4.7,2025-05-11
+172,Smart Watch,Electronics,Coimbatore,Ahmedabad,2,2,3,6,4,2.3,2025-01-26
+22,Shoes,Fashion,Vellore,Salem,7,5,1,9,1,4.6,2025-05-27
+3,Saree,Fashion,Tirunelveli,Lucknow,6,4,3,3,5,4.5,2025-03-18
+175,Headphones,Electronics,Karur,Pune,6,5,3,10,2,4.8,2025-06-01
+14,Headphones,Electronics,Dindigul,Hyderabad,9,4,3,2,2,5.7,2025-03-15
+180,Refrigerator,Appliances,Vellore,Delhi,6,3,3,9,1,4.2,2025-04-04
+290,Mixer,Appliances,Coimbatore,Pune,9,2,3,7,5,5.1,2025-03-07
+142,TV,Electronics,Coimbatore,Pune,1,2,3,9,1,1.9,2025-06-10
+108,Shoes,Fashion,Thoothukudi,Ahmedabad,5,3,1,2,2,3.2,2025-01-06
+63,Mobile,Electronics,Tiruchirappalli,Mumbai,3,1,2,7,3,2.1,2025-01-15
+21,Laptop,Electronics,Karur,Tiruppur,3,4,0,7,2,2.4,2025-02-08
+155,Saree,Fashion,Dindigul,Salem,7,3,0,10,2,3.7,2025-02-15
+58,Mobile,Electronics,Coimbatore,Chennai,2,0,1,6,2,1.1,2025-01-06
+62,Saree,Fashion,Tiruchirappalli,Lucknow,3,0,1,4,3,1.5,2025-04-02
+90,T-Shirt,Fashion,Salem,Kolkata,6,3,3,8,1,4.2,2025-03-01
+272,Headphones,Electronics,Dindigul,Madurai,3,1,2,1,4,2.1,2025-06-17
+203,Refrigerator,Appliances,Vellore,Kolkata,1,3,0,10,3,1.3,2025-01-06
+3,Mixer,Appliances,Vellore,Hyderabad,3,0,1,7,2,1.5,2025-06-26
+195,Mixer,Appliances,Tirunelveli,Madurai,9,0,2,4,5,4.2,2025-06-21
+109,T-Shirt,Fashion,Erode,Tiruppur,6,3,1,4,3,3.6,2025-04-07
+173,Refrigerator,Appliances,Erode,Coimbatore,1,4,2,5,5,2.2,2025-05-24
+77,Headphones,Electronics,Salem,Salem,10,4,3,8,1,6.1,2025-01-22
+3,T-Shirt,Fashion,Kanchipuram,Delhi,2,4,3,9,4,2.9,2025-05-31
+227,Laptop,Electronics,Tirunelveli,Delhi,10,1,0,10,4,4.3,2025-01-30
+154,TV,Electronics,Dindigul,Pune,2,5,3,1,4,3.2,2025-01-25
+257,Smart Watch,Electronics,Salem,Trichy,2,5,2,4,5,2.9,2025-04-05
+61,Mixer,Appliances,Vellore,Coimbatore,7,4,2,7,4,4.6,2025-03-23
+193,Mobile,Electronics,Chennai,Lucknow,3,5,2,3,3,3.3,2025-05-19
+18,Smart Watch,Electronics,Vellore,Kolkata,5,4,0,2,1,3.2,2025-01-07
+95,Smart Watch,Electronics,Kanchipuram,Madurai,8,4,3,5,3,5.3,2025-01-21
+84,Headphones,Electronics,Namakkal,Jaipur,2,5,1,6,2,2.6,2025-03-08
+155,Smart Watch,Electronics,Salem,Tiruppur,8,1,2,4,2,4.1,2025-01-16
+31,Laptop,Electronics,Tiruchirappalli,Bangalore,7,4,3,8,3,4.9,2025-04-17
+83,T-Shirt,Fashion,Vellore,Salem,4,5,3,4,3,4.0,2025-05-16
+241,Mixer,Appliances,Tirunelveli,Tiruppur,2,4,2,3,4,2.6,2025-02-12
+84,Saree,Fashion,Coimbatore,Jaipur,5,4,2,10,3,3.8,2025-05-08
+170,Shoes,Fashion,Coimbatore,Hyderabad,2,2,3,10,3,2.3,2025-05-08
+235,T-Shirt,Fashion,Erode,Trichy,10,4,1,6,2,5.5,2025-01-08
+102,Laptop,Electronics,Thanjavur,Trichy,5,3,2,6,4,3.5,2025-06-25
+33,Mixer,Appliances,Thanjavur,Mumbai,3,2,1,5,2,2.1,2025-03-18
+57,T-Shirt,Fashion,Tiruchirappalli,Jaipur,1,1,0,2,2,0.7,2025-05-10
+161,TV,Electronics,Salem,Chennai,2,1,0,2,3,1.1,2025-04-20
+7,Refrigerator,Appliances,Erode,Tiruppur,1,4,3,9,2,2.5,2025-05-31
+264,Refrigerator,Appliances,Coimbatore,Mumbai,4,1,1,5,5,2.2,2025-02-01
+139,Shoes,Fashion,Coimbatore,Lucknow,7,3,0,7,1,3.7,2025-06-28
+219,Mixer,Appliances,Namakkal,Coimbatore,3,3,2,1,1,2.7,2025-01-06
+184,Refrigerator,Appliances,Madurai,Pune,9,5,3,9,2,6.0,2025-04-04
+64,Shoes,Fashion,Madurai,Hyderabad,5,4,1,3,1,3.5,2025-02-08
+8,Headphones,Electronics,Tiruppur,Kolkata,5,4,0,8,5,3.2,2025-04-16
+124,Mobile,Electronics,Tiruchirappalli,Tiruppur,4,3,1,4,3,2.8,2025-01-02
+26,Laptop,Electronics,Tirunelveli,Pune,8,4,3,1,2,5.3,2025-05-02
+134,Saree,Fashion,Thanjavur,Tiruppur,9,1,0,4,1,3.9,2025-02-16
+263,Laptop,Electronics,Dindigul,Bangalore,6,0,2,5,1,3.0,2025-04-19
+263,Saree,Fashion,Madurai,Delhi,4,5,1,6,1,3.4,2025-04-21
+146,T-Shirt,Fashion,Vellore,Bangalore,3,4,0,3,1,2.4,2025-06-15
+87,Mixer,Appliances,Coimbatore,Jaipur,1,2,0,9,4,1.0,2025-02-18
+2,Smart Watch,Electronics,Dindigul,Kolkata,4,3,2,4,4,3.1,2025-01-24
+172,Smart Watch,Electronics,Tirunelveli,Bangalore,7,0,1,5,3,3.1,2025-05-18
+36,Smart Watch,Electronics,Tiruchirappalli,Chennai,5,5,2,7,4,4.1,2025-04-13
+258,Headphones,Electronics,Tiruppur,Mumbai,2,0,0,2,4,0.8,2025-03-09
+150,Saree,Fashion,Dindigul,Tiruppur,5,1,0,10,4,2.3,2025-05-07
+13,Laptop,Electronics,Madurai,Bangalore,10,3,1,7,2,5.2,2025-05-04
+123,Headphones,Electronics,Karur,Madurai,10,5,0,2,3,5.5,2025-01-20
+142,Mobile,Electronics,Erode,Hyderabad,4,4,2,6,4,3.4,2025-06-28
+121,Headphones,Electronics,Chennai,Hyderabad,8,3,1,9,4,4.4,2025-01-24
+2,Headphones,Electronics,Coimbatore,Trichy,5,5,0,2,2,3.5,2025-04-08
+227,Headphones,Electronics,Namakkal,Delhi,1,2,0,6,5,1.0,2025-06-01
+192,Refrigerator,Appliances,Tiruppur,Mumbai,9,1,2,6,2,4.5,2025-05-04
+258,Shoes,Fashion,Thanjavur,Delhi,9,4,1,9,2,5.1,2025-06-18
+229,Mobile,Electronics,Chennai,Jaipur,7,3,1,5,1,4.0,2025-03-17
+279,Shoes,Fashion,Thoothukudi,Tiruppur,9,3,1,9,4,4.8,2025-05-11
+232,TV,Electronics,Namakkal,Delhi,5,3,0,6,2,2.9,2025-05-04
+222,Shoes,Fashion,Coimbatore,Trichy,5,3,2,4,2,3.5,2025-04-03
+210,TV,Electronics,Salem,Jaipur,6,5,0,6,3,3.9,2025-01-16
+242,Mobile,Electronics,Karur,Trichy,7,4,2,6,3,4.6,2025-02-28
+68,Laptop,Electronics,Erode,Mumbai,3,3,0,8,1,2.1,2025-03-11
+81,Shoes,Fashion,Tirunelveli,Hyderabad,7,3,2,3,2,4.3,2025-03-22
+218,Shoes,Fashion,Erode,Chennai,5,0,1,1,4,2.3,2025-02-14
+204,Smart Watch,Electronics,Coimbatore,Tiruppur,3,2,0,8,5,1.8,2025-03-11
+59,Refrigerator,Appliances,Tirunelveli,Hyderabad,5,0,3,1,3,2.9,2025-04-08
+297,Shoes,Fashion,Thanjavur,Madurai,6,1,0,4,1,2.7,2025-02-18
+295,Refrigerator,Appliances,Coimbatore,Mumbai,10,1,2,4,4,4.9,2025-03-03
+236,Shoes,Fashion,Tiruppur,Coimbatore,2,0,2,2,5,1.4,2025-06-04
+60,Laptop,Electronics,Salem,Ahmedabad,4,1,3,1,2,2.8,2025-04-03
+20,Shoes,Fashion,Tiruchirappalli,Pune,7,1,3,4,4,4.0,2025-05-31
+28,Mixer,Appliances,Vellore,Trichy,9,2,2,8,1,4.8,2025-05-03
+82,T-Shirt,Fashion,Karur,Lucknow,8,1,1,9,4,3.8,2025-05-01
+2,Laptop,Electronics,Kanchipuram,Bangalore,5,5,3,8,2,4.4,2025-03-21
+234,Laptop,Electronics,Erode,Chennai,2,0,1,7,5,1.1,2025-04-21
+253,TV,Electronics,Thoothukudi,Hyderabad,6,4,2,9,5,4.2,2025-01-26
+287,Laptop,Electronics,Tiruchirappalli,Tiruppur,6,2,1,6,3,3.3,2025-04-10
+273,Refrigerator,Appliances,Thanjavur,Madurai,5,2,0,2,3,2.6,2025-04-05
+114,Shoes,Fashion,Erode,Hyderabad,3,2,0,1,3,1.8,2025-04-17
+133,T-Shirt,Fashion,Dindigul,Jaipur,1,1,1,6,4,1.0,2025-04-25
+193,Smart Watch,Electronics,Madurai,Salem,3,5,3,1,1,3.6,2025-04-06
+102,Smart Watch,Electronics,Dindigul,Chennai,6,5,3,9,4,4.8,2025-05-08
+88,Mixer,Appliances,Thoothukudi,Hyderabad,3,0,1,9,2,1.5,2025-03-08
+141,Mixer,Appliances,Thoothukudi,Kolkata,6,2,1,2,2,3.3,2025-06-07
+164,TV,Electronics,Tiruppur,Lucknow,5,5,1,4,4,3.8,2025-05-27
+42,Refrigerator,Appliances,Vellore,Jaipur,3,2,3,1,1,2.7,2025-02-12
+12,Refrigerator,Appliances,Salem,Trichy,10,0,1,3,5,4.3,2025-01-18
+123,Mobile,Electronics,Coimbatore,Salem,10,1,3,8,5,5.2,2025-06-26
+34,Headphones,Electronics,Thanjavur,Chennai,4,2,2,6,3,2.8,2025-02-03
+154,Laptop,Electronics,Chennai,Hyderabad,1,4,0,5,3,1.6,2025-06-29
+117,Laptop,Electronics,Tiruppur,Tiruppur,4,3,2,1,3,3.1,2025-01-02
+238,TV,Electronics,Thanjavur,Lucknow,2,5,3,7,5,3.2,2025-02-06
+157,T-Shirt,Fashion,Salem,Delhi,8,1,1,4,2,3.8,2025-05-11
+179,T-Shirt,Fashion,Tiruchirappalli,Kolkata,1,1,0,8,5,0.7,2025-04-05
+208,Mixer,Appliances,Tirunelveli,Mumbai,8,0,2,6,4,3.8,2025-02-10
+102,Headphones,Electronics,Kanchipuram,Hyderabad,9,1,3,9,2,4.8,2025-05-01
+145,Smart Watch,Electronics,Salem,Delhi,6,4,0,2,4,3.6,2025-03-31
+71,T-Shirt,Fashion,Erode,Ahmedabad,10,4,1,5,3,5.5,2025-01-01
+223,Mixer,Appliances,Thoothukudi,Trichy,9,4,1,5,1,5.1,2025-02-13
+89,Saree,Fashion,Tiruchirappalli,Salem,7,5,3,3,4,5.2,2025-01-26
+77,Mixer,Appliances,Dindigul,Salem,3,2,1,7,3,2.1,2025-04-22
+226,Laptop,Electronics,Madurai,Kolkata,3,5,1,9,2,3.0,2025-05-31
+292,Mixer,Appliances,Kanchipuram,Salem,8,0,0,8,1,3.2,2025-02-21
+294,Laptop,Electronics,Namakkal,Trichy,9,3,1,10,2,4.8,2025-03-20
+79,Headphones,Electronics,Vellore,Trichy,6,2,0,3,3,3.0,2025-01-17
+128,TV,Electronics,Chennai,Salem,9,5,0,1,2,5.1,2025-05-27
+129,Smart Watch,Electronics,Namakkal,Bangalore,2,2,2,8,2,2.0,2025-03-09
+5,Mobile,Electronics,Erode,Mumbai,5,3,1,2,2,3.2,2025-04-16
+108,Laptop,Electronics,Vellore,Madurai,6,5,0,1,2,3.9,2025-05-06
+160,Shoes,Fashion,Tirunelveli,Coimbatore,1,2,3,7,2,1.9,2025-05-17
+141,T-Shirt,Fashion,Dindigul,Ahmedabad,2,4,3,9,4,2.9,2025-05-30
+295,Headphones,Electronics,Dindigul,Chennai,7,3,1,4,4,4.0,2025-05-24
+7,Smart Watch,Electronics,Coimbatore,Coimbatore,9,4,0,7,1,4.8,2025-04-05
+223,TV,Electronics,Namakkal,Mumbai,8,5,1,3,3,5.0,2025-05-01
+196,Smart Watch,Electronics,Dindigul,Chennai,3,5,3,5,1,3.6,2025-06-18
+147,Saree,Fashion,Erode,Bangalore,6,4,1,1,1,3.9,2025-02-02
+13,Mobile,Electronics,Coimbatore,Bangalore,5,2,1,2,3,2.9,2025-06-14
+268,Shoes,Fashion,Dindigul,Jaipur,3,4,3,2,1,3.3,2025-04-17
+103,Saree,Fashion,Tirunelveli,Bangalore,5,3,3,4,4,3.8,2025-04-22
+22,Shoes,Fashion,Tirunelveli,Jaipur,8,5,3,5,1,5.6,2025-05-23
+79,Saree,Fashion,Vellore,Ahmedabad,5,1,1,5,3,2.6,2025-06-06
+9,Refrigerator,Appliances,Madurai,Delhi,9,1,3,2,5,4.8,2025-03-02
+33,T-Shirt,Fashion,Dindigul,Tiruppur,2,0,3,10,4,1.7,2025-03-19
+65,Laptop,Electronics,Tiruppur,Madurai,2,3,2,7,3,2.3,2025-01-05
+284,Saree,Fashion,Madurai,Jaipur,2,0,0,2,1,0.8,2025-02-26
+124,Smart Watch,Electronics,Madurai,Delhi,10,4,0,8,3,5.2,2025-04-17
+30,Shoes,Fashion,Tiruppur,Coimbatore,1,4,0,5,5,1.6,2025-04-15
+255,Laptop,Electronics,Thanjavur,Madurai,2,3,0,10,3,1.7,2025-02-25
+154,TV,Electronics,Chennai,Delhi,3,4,3,10,3,3.3,2025-04-27
+118,Mixer,Appliances,Coimbatore,Trichy,5,5,0,8,3,3.5,2025-05-13
+263,Shoes,Fashion,Thoothukudi,Delhi,2,2,2,4,4,2.0,2025-04-06
+70,TV,Electronics,Tirunelveli,Kolkata,10,4,1,10,2,5.5,2025-03-07
+133,Mixer,Appliances,Coimbatore,Delhi,3,4,0,3,3,2.4,2025-06-30
+54,Refrigerator,Appliances,Madurai,Madurai,4,3,3,2,3,3.4,2025-06-16
+218,Headphones,Electronics,Chennai,Tiruppur,8,5,3,7,4,5.6,2025-02-18
+203,Smart Watch,Electronics,Tirunelveli,Coimbatore,6,5,2,7,5,4.5,2025-05-26
+39,Smart Watch,Electronics,Tiruppur,Kolkata,7,1,2,2,2,3.7,2025-01-10
+160,Mixer,Appliances,Kanchipuram,Trichy,3,2,2,8,3,2.4,2025-04-28
+109,Refrigerator,Appliances,Madurai,Bangalore,6,1,1,10,5,3.0,2025-02-09
+148,Saree,Fashion,Madurai,Madurai,6,0,1,4,3,2.7,2025-05-22
+195,TV,Electronics,Tirunelveli,Tiruppur,2,2,1,7,2,1.7,2025-01-04
+130,Saree,Fashion,Karur,Chennai,1,3,3,4,4,2.2,2025-01-25
+47,Smart Watch,Electronics,Vellore,Madurai,1,4,0,10,5,1.6,2025-04-18
+11,Smart Watch,Electronics,Chennai,Pune,8,2,1,1,1,4.1,2025-05-27
+137,Refrigerator,Appliances,Namakkal,Ahmedabad,8,4,1,9,4,4.7,2025-02-09
+223,Shoes,Fashion,Coimbatore,Madurai,7,1,1,6,5,3.4,2025-05-27
+53,Smart Watch,Electronics,Chennai,Tiruppur,5,4,2,6,5,3.8,2025-05-09
+231,Mobile,Electronics,Dindigul,Delhi,6,2,2,9,4,3.6,2025-04-21
+59,Saree,Fashion,Kanchipuram,Bangalore,8,4,2,10,2,5.0,2025-06-26
+171,Smart Watch,Electronics,Tiruchirappalli,Kolkata,3,1,1,6,2,1.8,2025-06-20
+35,Saree,Fashion,Namakkal,Chennai,8,0,1,8,1,3.5,2025-02-14
+119,Saree,Fashion,Thoothukudi,Ahmedabad,1,0,3,2,4,1.3,2025-05-10
+203,Headphones,Electronics,Tiruchirappalli,Pune,1,4,3,8,4,2.5,2025-03-20
+172,Mobile,Electronics,Chennai,Lucknow,9,0,2,4,2,4.2,2025-04-21
+51,Mobile,Electronics,Namakkal,Ahmedabad,1,0,0,8,3,0.4,2025-05-06
+34,Refrigerator,Appliances,Chennai,Ahmedabad,7,4,2,5,4,4.6,2025-06-10
+255,Saree,Fashion,Coimbatore,Kolkata,9,4,3,7,1,5.7,2025-01-26
+24,T-Shirt,Fashion,Coimbatore,Madurai,9,4,0,8,3,4.8,2025-06-03
+180,Refrigerator,Appliances,Dindigul,Tiruppur,7,5,2,8,2,4.9,2025-01-01
+170,Refrigerator,Appliances,Salem,Coimbatore,8,3,0,10,1,4.1,2025-06-04
+236,TV,Electronics,Kanchipuram,Tiruppur,9,1,3,1,4,4.8,2025-05-25
+8,Mixer,Appliances,Salem,Coimbatore,10,1,3,1,3,5.2,2025-05-17
+135,Headphones,Electronics,Karur,Trichy,6,5,0,1,2,3.9,2025-03-04
+225,Smart Watch,Electronics,Thanjavur,Lucknow,7,1,2,2,2,3.7,2025-02-06
+190,Mixer,Appliances,Karur,Kolkata,7,2,1,9,3,3.7,2025-02-14
+204,Mobile,Electronics,Chennai,Tiruppur,9,2,3,3,1,5.1,2025-02-01
+278,Mixer,Appliances,Coimbatore,Hyderabad,2,2,2,3,3,2.0,2025-04-08
+111,Mobile,Electronics,Tiruppur,Trichy,10,0,3,8,1,4.9,2025-02-06
+225,Headphones,Electronics,Chennai,Salem,5,1,0,2,2,2.3,2025-03-08
+291,Mixer,Appliances,Erode,Madurai,6,1,1,7,2,3.0,2025-06-24
+11,Saree,Fashion,Madurai,Lucknow,5,2,1,3,2,2.9,2025-04-06
+277,Laptop,Electronics,Salem,Pune,4,2,0,5,4,2.2,2025-01-26
+38,Headphones,Electronics,Erode,Ahmedabad,8,0,0,3,2,3.2,2025-02-16
+210,Mobile,Electronics,Coimbatore,Hyderabad,2,5,3,8,1,3.2,2025-03-05
+178,Saree,Fashion,Erode,Mumbai,2,0,3,10,4,1.7,2025-03-03
+145,Saree,Fashion,Kanchipuram,Ahmedabad,9,2,1,5,4,4.5,2025-01-18
+156,TV,Electronics,Erode,Kolkata,2,1,3,4,4,2.0,2025-03-14
+132,T-Shirt,Fashion,Vellore,Bangalore,10,0,0,8,4,4.0,2025-05-26
+222,Saree,Fashion,Tiruchirappalli,Jaipur,5,3,0,3,5,2.9,2025-06-29
+286,Smart Watch,Electronics,Namakkal,Salem,1,3,3,7,1,2.2,2025-03-29
+167,Laptop,Electronics,Salem,Ahmedabad,7,5,1,3,3,4.6,2025-05-12
+257,Saree,Fashion,Thanjavur,Lucknow,8,2,3,3,3,4.7,2025-02-05
+110,Mobile,Electronics,Salem,Salem,7,5,0,8,3,4.3,2025-05-18
+114,T-Shirt,Fashion,Thoothukudi,Mumbai,1,3,3,2,1,2.2,2025-06-28
+188,TV,Electronics,Erode,Lucknow,7,1,3,8,4,4.0,2025-06-19
+212,T-Shirt,Fashion,Salem,Jaipur,2,1,0,10,4,1.1,2025-01-30
+219,Shoes,Fashion,Tiruchirappalli,Coimbatore,10,3,1,9,5,5.2,2025-06-01
+289,Shoes,Fashion,Vellore,Madurai,5,3,2,1,4,3.5,2025-04-25
+41,Mixer,Appliances,Namakkal,Hyderabad,4,5,0,6,3,3.1,2025-01-15
+40,Smart Watch,Electronics,Vellore,Tiruppur,4,3,2,7,5,3.1,2025-05-18
+155,Mobile,Electronics,Thoothukudi,Bangalore,2,1,1,3,5,1.4,2025-04-08
+41,Shoes,Fashion,Dindigul,Ahmedabad,2,1,2,2,1,1.7,2025-02-27
+120,Saree,Fashion,Dindigul,Madurai,6,0,3,6,4,3.3,2025-03-13
+202,TV,Electronics,Madurai,Salem,3,3,1,6,2,2.4,2025-04-27
+52,Mixer,Appliances,Erode,Coimbatore,2,1,2,9,2,1.7,2025-03-12
+228,Mixer,Appliances,Thanjavur,Salem,6,3,1,1,1,3.6,2025-03-23
+107,T-Shirt,Fashion,Tiruchirappalli,Lucknow,6,2,3,4,3,3.9,2025-06-30
+295,Shoes,Fashion,Namakkal,Madurai,9,3,2,2,1,5.1,2025-04-07
+107,Mobile,Electronics,Dindigul,Trichy,10,4,3,6,4,6.1,2025-06-15
+242,T-Shirt,Fashion,Vellore,Chennai,9,4,1,4,3,5.1,2025-05-01
+146,Mobile,Electronics,Dindigul,Trichy,5,2,1,10,2,2.9,2025-04-24
+176,Mixer,Appliances,Thoothukudi,Tiruppur,8,4,1,5,4,4.7,2025-02-20
+89,Mobile,Electronics,Kanchipuram,Madurai,2,2,2,10,2,2.0,2025-02-19
+129,T-Shirt,Fashion,Karur,Lucknow,5,0,2,2,3,2.6,2025-02-07
+131,Mixer,Appliances,Kanchipuram,Delhi,7,2,3,9,3,4.3,2025-06-23
+176,Mobile,Electronics,Erode,Trichy,4,2,1,7,3,2.5,2025-02-20
+188,Mobile,Electronics,Tiruppur,Tiruppur,5,2,0,3,2,2.6,2025-03-11
+297,Laptop,Electronics,Tiruppur,Hyderabad,6,2,0,5,1,3.0,2025-04-20
+135,Saree,Fashion,Tiruppur,Jaipur,8,2,2,6,4,4.4,2025-01-11
+51,Mixer,Appliances,Erode,Tiruppur,3,3,3,4,3,3.0,2025-02-04
+275,Smart Watch,Electronics,Tiruchirappalli,Madurai,4,1,0,4,2,1.9,2025-05-15
+266,Saree,Fashion,Dindigul,Chennai,6,3,2,4,4,3.9,2025-02-19
+249,Saree,Fashion,Chennai,Bangalore,4,0,2,6,1,2.2,2025-03-12
+77,Headphones,Electronics,Karur,Coimbatore,9,4,1,9,5,5.1,2025-01-25
+246,T-Shirt,Fashion,Thanjavur,Trichy,3,2,1,8,1,2.1,2025-03-27
+280,Shoes,Fashion,Chennai,Kolkata,7,1,2,4,2,3.7,2025-05-06
+173,Mixer,Appliances,Karur,Madurai,2,5,3,10,1,3.2,2025-02-27
+277,Headphones,Electronics,Erode,Coimbatore,2,1,2,7,1,1.7,2025-01-21
+176,Mobile,Electronics,Karur,Trichy,5,5,3,8,3,4.4,2025-04-29
+298,TV,Electronics,Vellore,Hyderabad,9,0,1,4,3,3.9,2025-01-21
+65,T-Shirt,Fashion,Dindigul,Bangalore,4,5,0,1,5,3.1,2025-05-16
+211,Mobile,Electronics,Thanjavur,Coimbatore,9,3,3,5,1,5.4,2025-03-06
+125,Refrigerator,Appliances,Salem,Hyderabad,5,4,0,4,2,3.2,2025-04-29
+223,Headphones,Electronics,Madurai,Kolkata,1,5,2,6,1,2.5,2025-04-16
+253,T-Shirt,Fashion,Vellore,Lucknow,1,4,0,7,2,1.6,2025-01-11
+143,Saree,Fashion,Karur,Tiruppur,3,1,3,9,4,2.4,2025-02-03
+51,TV,Electronics,Vellore,Tiruppur,2,1,0,6,5,1.1,2025-06-15
+169,Mixer,Appliances,Tiruppur,Mumbai,9,4,1,1,1,5.1,2025-02-05
+245,Smart Watch,Electronics,Chennai,Ahmedabad,6,1,0,1,1,2.7,2025-02-16
+285,Saree,Fashion,Karur,Madurai,4,3,2,4,2,3.1,2025-06-12
+61,Refrigerator,Appliances,Chennai,Pune,8,3,1,4,3,4.4,2025-05-23
+297,Smart Watch,Electronics,Thoothukudi,Madurai,8,0,0,9,5,3.2,2025-03-27
+296,Mixer,Appliances,Dindigul,Delhi,3,5,0,1,4,2.7,2025-05-31
+222,T-Shirt,Fashion,Erode,Ahmedabad,10,0,1,7,1,4.3,2025-06-10
+191,Smart Watch,Electronics,Tiruppur,Ahmedabad,9,4,2,7,3,5.4,2025-02-07
+230,TV,Electronics,Chennai,Pune,10,0,3,7,4,4.9,2025-01-30
+27,Headphones,Electronics,Chennai,Mumbai,10,0,2,1,2,4.6,2025-05-25
+131,TV,Electronics,Kanchipuram,Chennai,8,5,2,4,4,5.3,2025-03-02
+236,Saree,Fashion,Tiruchirappalli,Hyderabad,8,3,0,2,3,4.1,2025-04-04
+67,Headphones,Electronics,Coimbatore,Madurai,1,3,1,10,4,1.6,2025-04-24
+118,Laptop,Electronics,Tirunelveli,Mumbai,10,0,3,2,5,4.9,2025-05-09
+170,Saree,Fashion,Coimbatore,Kolkata,6,1,2,3,5,3.3,2025-06-06
+257,Laptop,Electronics,Coimbatore,Delhi,6,4,0,10,2,3.6,2025-04-16
+275,Shoes,Fashion,Erode,Jaipur,1,3,0,3,3,1.3,2025-02-22
+80,Refrigerator,Appliances,Salem,Tiruppur,3,4,2,5,4,3.0,2025-05-30
+99,TV,Electronics,Tiruchirappalli,Tiruppur,5,5,3,3,5,4.4,2025-06-05
+203,Saree,Fashion,Madurai,Ahmedabad,3,1,2,7,4,2.1,2025-03-20
+269,Headphones,Electronics,Namakkal,Tiruppur,6,0,3,5,2,3.3,2025-06-15
+263,Shoes,Fashion,Namakkal,Hyderabad,4,3,2,6,4,3.1,2025-02-02
+2,Mixer,Appliances,Madurai,Coimbatore,10,1,1,9,3,4.6,2025-03-28
+256,T-Shirt,Fashion,Coimbatore,Mumbai,3,0,2,5,5,1.8,2025-01-28
+59,Shoes,Fashion,Namakkal,Delhi,10,1,2,1,5,4.9,2025-03-30
+221,Refrigerator,Appliances,Thanjavur,Delhi,1,0,1,2,5,0.7,2025-05-16
+204,Smart Watch,Electronics,Vellore,Chennai,4,3,2,5,1,3.1,2025-03-20
+141,Shoes,Fashion,Thoothukudi,Mumbai,9,2,0,6,3,4.2,2025-06-04
+180,TV,Electronics,Karur,Chennai,10,0,1,10,4,4.3,2025-01-22
+265,Refrigerator,Appliances,Erode,Tiruppur,3,5,3,4,2,3.6,2025-03-10
+264,Mixer,Appliances,Tiruppur,Hyderabad,5,1,0,4,3,2.3,2025-01-08
+191,Mixer,Appliances,Kanchipuram,Lucknow,8,1,3,3,1,4.4,2025-04-30
+95,Laptop,Electronics,Namakkal,Hyderabad,1,5,2,10,1,2.5,2025-01-07
+278,Headphones,Electronics,Tiruppur,Coimbatore,5,2,0,7,2,2.6,2025-02-10
+65,TV,Electronics,Vellore,Hyderabad,6,1,1,7,2,3.0,2025-04-25
+271,TV,Electronics,Tiruppur,Mumbai,7,1,2,6,1,3.7,2025-04-14
+61,Shoes,Fashion,Karur,Trichy,10,3,0,9,5,4.9,2025-05-18
+10,Refrigerator,Appliances,Madurai,Tiruppur,5,4,0,6,4,3.2,2025-03-26
+29,Mixer,Appliances,Thoothukudi,Tiruppur,2,0,1,5,3,1.1,2025-04-18
+236,Headphones,Electronics,Erode,Pune,5,5,0,3,4,3.5,2025-03-29
+181,Mobile,Electronics,Thoothukudi,Jaipur,6,2,2,6,1,3.6,2025-01-26
+231,Mixer,Appliances,Karur,Jaipur,7,5,2,10,3,4.9,2025-05-23
+21,TV,Electronics,Dindigul,Bangalore,3,0,2,4,4,1.8,2025-06-27
+69,Mobile,Electronics,Tirunelveli,Tiruppur,9,2,1,9,1,4.5,2025-05-23
+122,Smart Watch,Electronics,Dindigul,Kolkata,2,5,1,10,1,2.6,2025-06-14
+77,Mobile,Electronics,Karur,Trichy,4,0,1,7,5,1.9,2025-02-09
+162,Headphones,Electronics,Vellore,Trichy,9,5,3,1,2,6.0,2025-03-13
+65,TV,Electronics,Kanchipuram,Trichy,9,5,3,6,4,6.0,2025-01-09
+282,Refrigerator,Appliances,Dindigul,Chennai,8,1,2,8,5,4.1,2025-06-30
+15,Headphones,Electronics,Thoothukudi,Salem,1,2,3,6,5,1.9,2025-04-12
+120,Saree,Fashion,Coimbatore,Bangalore,1,0,3,7,3,1.3,2025-05-26
+297,TV,Electronics,Vellore,Tiruppur,8,5,0,9,4,4.7,2025-05-18
+212,TV,Electronics,Vellore,Salem,9,4,2,7,1,5.4,2025-02-25
+114,Laptop,Electronics,Tiruppur,Ahmedabad,9,2,1,4,2,4.5,2025-06-20
+271,Smart Watch,Electronics,Tirunelveli,Delhi,4,2,0,1,1,2.2,2025-03-15
+242,T-Shirt,Fashion,Thanjavur,Madurai,5,5,3,10,2,4.4,2025-03-18
+96,Saree,Fashion,Chennai,Bangalore,8,2,3,10,3,4.7,2025-04-30
+57,Mixer,Appliances,Namakkal,Hyderabad,1,5,3,5,3,2.8,2025-03-01
+174,Shoes,Fashion,Kanchipuram,Pune,1,4,2,10,1,2.2,2025-04-10
+237,Shoes,Fashion,Madurai,Trichy,6,2,1,10,1,3.3,2025-01-06
+133,Mixer,Appliances,Chennai,Pune,6,1,0,7,5,2.7,2025-02-25
+38,Shoes,Fashion,Coimbatore,Jaipur,5,4,0,9,3,3.2,2025-03-09
+214,Refrigerator,Appliances,Kanchipuram,Lucknow,9,5,3,1,3,6.0,2025-03-07
+283,Mobile,Electronics,Erode,Chennai,5,2,0,1,2,2.6,2025-05-29
+51,Mixer,Appliances,Coimbatore,Jaipur,8,0,2,5,3,3.8,2025-06-28
+141,Headphones,Electronics,Vellore,Trichy,2,5,3,3,5,3.2,2025-03-02
+287,Mixer,Appliances,Dindigul,Trichy,6,5,3,7,5,4.8,2025-03-06
+225,Refrigerator,Appliances,Tiruppur,Jaipur,4,0,0,1,2,1.6,2025-05-28
+2,Shoes,Fashion,Namakkal,Lucknow,3,3,3,7,2,3.0,2025-03-17
+14,Laptop,Electronics,Salem,Kolkata,9,1,1,3,1,4.2,2025-06-01
+55,Refrigerator,Appliances,Chennai,Ahmedabad,6,2,0,4,2,3.0,2025-03-09
+300,Saree,Fashion,Coimbatore,Mumbai,4,0,1,2,4,1.9,2025-02-27
+81,Laptop,Electronics,Vellore,Tiruppur,6,3,2,7,4,3.9,2025-02-11
+288,Shoes,Fashion,Tiruppur,Bangalore,7,3,1,2,4,4.0,2025-06-23
+212,Saree,Fashion,Dindigul,Trichy,2,0,1,3,1,1.1,2025-04-05
+238,Saree,Fashion,Thanjavur,Salem,8,3,1,8,2,4.4,2025-04-19
+127,TV,Electronics,Erode,Pune,9,0,1,10,2,3.9,2025-02-27
+117,Saree,Fashion,Tirunelveli,Jaipur,7,4,3,3,2,4.9,2025-06-16
+240,Shoes,Fashion,Salem,Bangalore,6,0,0,3,4,2.4,2025-05-02
+65,Mobile,Electronics,Tiruppur,Ahmedabad,7,0,0,1,5,2.8,2025-02-18
+278,Smart Watch,Electronics,Tiruchirappalli,Pune,6,3,2,10,2,3.9,2025-06-16
+154,TV,Electronics,Erode,Madurai,4,0,1,1,1,1.9,2025-05-09
+225,Mobile,Electronics,Chennai,Trichy,10,5,0,9,4,5.5,2025-04-10
+161,Shoes,Fashion,Madurai,Lucknow,1,5,3,3,4,2.8,2025-01-10
+35,Refrigerator,Appliances,Chennai,Delhi,5,4,3,6,1,4.1,2025-03-29
+138,Laptop,Electronics,Namakkal,Bangalore,8,0,3,2,1,4.1,2025-05-03
+1,Mobile,Electronics,Tirunelveli,Salem,7,0,1,2,3,3.1,2025-02-26
+91,Mixer,Appliances,Tiruppur,Trichy,7,5,1,1,1,4.6,2025-06-12
+66,Smart Watch,Electronics,Erode,Ahmedabad,4,1,2,6,4,2.5,2025-01-16
+106,Mixer,Appliances,Tiruppur,Chennai,8,1,2,6,4,4.1,2025-02-21
+209,Saree,Fashion,Namakkal,Pune,4,2,0,10,2,2.2,2025-04-10
+249,Refrigerator,Appliances,Coimbatore,Bangalore,7,0,0,9,1,2.8,2025-03-21
+117,Mobile,Electronics,Tiruchirappalli,Chennai,2,5,0,10,5,2.3,2025-02-02
+235,Refrigerator,Appliances,Tiruchirappalli,Delhi,10,3,3,3,3,5.8,2025-03-30
+117,Headphones,Electronics,Chennai,Salem,8,2,3,4,5,4.7,2025-03-19
+58,Saree,Fashion,Dindigul,Chennai,5,4,2,3,1,3.8,2025-05-19
+188,Smart Watch,Electronics,Vellore,Hyderabad,3,0,1,9,3,1.5,2025-01-02
+70,T-Shirt,Fashion,Namakkal,Delhi,4,3,0,4,3,2.5,2025-06-25
+253,T-Shirt,Fashion,Erode,Hyderabad,5,2,2,9,3,3.2,2025-01-05
+63,Mobile,Electronics,Vellore,Coimbatore,4,0,3,8,2,2.5,2025-02-22
+98,Mixer,Appliances,Chennai,Pune,8,4,0,10,5,4.4,2025-02-17
+39,Refrigerator,Appliances,Dindigul,Chennai,10,3,0,10,3,4.9,2025-02-20
+102,Laptop,Electronics,Coimbatore,Mumbai,3,3,2,7,3,2.7,2025-05-25
+211,TV,Electronics,Dindigul,Ahmedabad,7,4,0,5,4,4.0,2025-03-01
+269,Laptop,Electronics,Madurai,Hyderabad,7,4,1,3,2,4.3,2025-03-13
+40,Smart Watch,Electronics,Tiruchirappalli,Mumbai,8,4,1,3,4,4.7,2025-02-17
+272,Saree,Fashion,Dindigul,Coimbatore,6,5,2,4,1,4.5,2025-01-23
+190,Mobile,Electronics,Thanjavur,Lucknow,1,5,0,2,1,1.9,2025-06-03
+287,Smart Watch,Electronics,Erode,Madurai,10,3,2,10,4,5.5,2025-04-12
+292,Mixer,Appliances,Salem,Trichy,3,5,0,4,2,2.7,2025-02-22
+219,T-Shirt,Fashion,Karur,Kolkata,8,1,3,2,4,4.4,2025-02-26
+229,T-Shirt,Fashion,Tirunelveli,Trichy,5,5,2,8,1,4.1,2025-03-09
+153,Saree,Fashion,Dindigul,Kolkata,6,4,0,9,3,3.6,2025-02-11
+179,Laptop,Electronics,Coimbatore,Tiruppur,8,3,0,8,4,4.1,2025-02-13
+287,Saree,Fashion,Tirunelveli,Lucknow,9,2,2,8,1,4.8,2025-02-04
+253,Laptop,Electronics,Erode,Trichy,6,2,1,6,4,3.3,2025-03-23
+170,Refrigerator,Appliances,Tiruchirappalli,Tiruppur,1,1,1,4,4,1.0,2025-04-05
+121,T-Shirt,Fashion,Thanjavur,Lucknow,3,4,3,1,5,3.3,2025-05-13
+192,Shoes,Fashion,Tiruppur,Lucknow,1,5,1,2,3,2.2,2025-05-25
+265,T-Shirt,Fashion,Kanchipuram,Jaipur,8,2,3,4,3,4.7,2025-04-05
+241,Smart Watch,Electronics,Madurai,Kolkata,4,3,2,2,2,3.1,2025-05-21
+253,Laptop,Electronics,Karur,Bangalore,7,4,2,2,3,4.6,2025-01-31
+26,Smart Watch,Electronics,Erode,Delhi,8,0,3,8,2,4.1,2025-02-08
+137,Headphones,Electronics,Namakkal,Lucknow,4,4,3,4,4,3.7,2025-02-08
+146,Saree,Fashion,Salem,Madurai,1,0,3,9,5,1.3,2025-03-02
+71,Laptop,Electronics,Salem,Salem,5,4,0,3,2,3.2,2025-06-12
+276,Refrigerator,Appliances,Madurai,Kolkata,9,4,3,3,2,5.7,2025-01-03
+199,Shoes,Fashion,Kanchipuram,Pune,5,2,0,2,2,2.6,2025-04-29

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Buyer Register | Purchasing Tendency Platform</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+
+body{
+background:linear-gradient(120deg,#e6d8ff,#d1e5ff);
+min-height:100vh;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 80px;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#444;
+}
+
+.logo span{
+color:#6c4df6;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+display:flex;
+gap:25px;
+background:rgba(255,255,255,0.35);
+padding:10px 20px;
+border-radius:40px;
+backdrop-filter:blur(10px);
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.nav-links a{
+position:relative;
+text-decoration:none;
+color:#444;
+font-weight:600;
+font-size:16px;
+padding:10px 15px;
+transition:0.3s;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-4px;
+width:0%;
+height:3px;
+background:#6c4df6;
+border-radius:3px;
+transition:0.35s ease;
+}
+
+.nav-links a:hover{
+color:#6c4df6;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a.active{
+color:#6c4df6;
+}
+
+.nav-links a.active::after{
+width:100%;
+}
+
+/* RIGHT NAV */
+
+.nav-right{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.nav-btn{
+background:#6c4df6;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+}
+
+/* LEFT TEXT */
+
+.hero-text{
+max-width:520px;
+}
+
+.hero-text span{
+color:#6c4df6;
+font-weight:600;
+font-size:14px;
+letter-spacing:1px;
+}
+
+.hero-text h1{
+font-size:50px;
+font-weight:700;
+margin:10px 0;
+}
+
+.hero-text p{
+color:#666;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+/* REGISTER CONTAINER */
+
+.login-container{
+width:440px;
+background:white;
+padding:40px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.login-container h3{
+margin-bottom:25px;
+font-size:24px;
+color:#444;
+}
+
+.login-container i{
+color:#6c4df6;
+margin-right:6px;
+}
+
+/* FORM GRID */
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.form-grid input,
+.form-grid select{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:15px;
+width:100%;
+}
+
+.login-container button{
+width:100%;
+margin-top:15px;
+background:#6c4df6;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-container button:hover{
+background:#583bdc;
+}
+
+/* REGISTER LINK */
+
+.register-link{
+margin-top:15px;
+text-align:center;
+font-size:14px;
+color:#666;
+}
+
+.register-link a{
+color:#6c4df6;
+text-decoration:none;
+font-weight:600;
+}
+
+/* FEATURES */
+
+.features{
+padding:80px;
+text-align:center;
+}
+
+.features h2{
+font-size:35px;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card i{
+font-size:30px;
+color:#6c4df6;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:14px;
+color:#666;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:60px;
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+<i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/admin">Admin</a>
+<a href="/seller_login">Seller</a>
+<a href="/buyer_login" class="active">Buyer</a>
+</div>
+
+<div class="nav-right">
+<i class="fa fa-search"></i>
+<a class="nav-btn" href="/buyer_register">Register</a>
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<span>Buyer</span>
+<h1>REGISTER</h1>
+
+<p>
+Create your buyer account to discover personalized product recommendations,
+track orders, and explore trending products in the marketplace. Our intelligent
+platform analyzes shopping behavior using TendGraphNet and SeqBehNet models.
+</p>
+
+</div>
+
+
+<!-- REGISTER FORM -->
+
+<div class="login-container">
+
+<h3><i class="fa fa-user-plus"></i> Buyer Registration</h3>
+
+<form method="post">
+
+<div class="form-grid">
+
+<input name="name" placeholder="Name">
+<input name="email" placeholder="Email">
+
+<input name="mobile" placeholder="Mobile">
+<input name="location" placeholder="Location">
+
+<input name="age" placeholder="Age">
+
+<select name="gender">
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<input name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+
+</div>
+
+<button>Register</button>
+
+</form>
+
+<div class="register-link">
+Already have an account? 
+<a href="/buyer_login">Login here</a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<h2>Platform Intelligence</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fa fa-network-wired"></i>
+<h3>TendGraphNet</h3>
+<p>Graph neural network discovering customer communities and demand patterns.</p>
+</div>
+
+<div class="card">
+<i class="fa fa-clock"></i>
+<h3>SeqBehNet</h3>
+<p>Sequential recommendation engine predicting next purchase behavior.</p>
+</div>
+
+<div class="card">
+<i class="fa fa-chart-bar"></i>
+<h3>Demand Insights</h3>
+<p>Identifies high-demand products across regions and communities.</p>
+</div>
+
+<div class="card">
+<i class="fa fa-lightbulb"></i>
+<h3>Smart Recommendations</h3>
+<p>Generates personalized product recommendations for buyers.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+Purchasing Tendency Community Classification System © 2026
+
+</footer>
+
+
+</body>
+</html>

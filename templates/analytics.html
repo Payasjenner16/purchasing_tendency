@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Seller Analytics Charts</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f3f6fb;
+}
+
+.sidebar{
+width:220px;
+height:100vh;
+background:#0f172a;
+color:white;
+position:fixed;
+padding:25px;
+}
+
+.sidebar a{
+display:block;
+color:#cbd5f5;
+text-decoration:none;
+margin-bottom:18px;
+}
+
+.main{
+margin-left:240px;
+padding:30px;
+}
+
+.dashboard{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+canvas{
+height:260px !important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Seller Panel</h2>
+
+<a href="/seller_dash">Dashboard</a> <a href="/seller_analytics">Analytics Charts</a>
+
+</div>
+
+<div class="main">
+
+<h2>Seller Analytics Charts</h2>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>Top Selling Products</h3>
+<canvas id="productChart"></canvas>
+</div>
+
+<div class="card">
+<h3>Demand by Location</h3>
+<canvas id="locationChart"></canvas>
+</div>
+
+<div class="card">
+<h3>Category Distribution</h3>
+<canvas id="categoryChart"></canvas>
+</div>
+
+<div class="card">
+<h3>Monthly Sales Trend</h3>
+<canvas id="salesChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+new Chart(document.getElementById("productChart"),{
+type:"bar",
+data:{
+labels: {{ products | tojson | safe }},
+datasets:[{data: {{ product_counts | tojson | safe }}}]
+}
+});
+
+new Chart(document.getElementById("locationChart"),{
+type:"bar",
+data:{
+labels: {{ locations | tojson | safe }},
+datasets:[{data: {{ location_counts | tojson | safe }}}]
+}
+});
+
+new Chart(document.getElementById("categoryChart"),{
+type:"pie",
+data:{
+labels: {{ categories | tojson | safe }},
+datasets:[{data: {{ category_counts | tojson | safe }}}]
+}
+});
+
+new Chart(document.getElementById("salesChart"),{
+type:"line",
+data:{
+labels: {{ months | tojson | safe }},
+datasets:[{data: {{ sales | tojson | safe }}}]
+}
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Seller Dashboard - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.sidebar .logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.sidebar .logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:24px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+font-weight:600;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.header h2{
+color:#444;
+}
+
+.user-box{
+display:flex;
+align-items:center;
+gap:10px;
+color:#555;
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* WELCOME */
+
+.welcome{
+margin-bottom:30px;
+}
+
+.welcome h1{
+font-size:26px;
+margin-bottom:5px;
+}
+
+.welcome p{
+color:#666;
+}
+
+/* CARDS GRID */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+/* CARD */
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:14px;
+
+border:2px solid #e8e8ff;
+
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+
+text-align:center;
+
+position:relative;
+
+transition:0.35s;
+
+}
+
+/* TOP ACCENT LINE */
+
+.card:before{
+
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+
+background:linear-gradient(90deg,#6c4df6,#8b73ff);
+
+border-radius:14px 14px 0 0;
+
+}
+
+/* HOVER */
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 14px 35px rgba(0,0,0,0.15);
+
+border-color:#cfc9ff;
+
+}
+
+/* ICON */
+
+.icon-circle{
+
+width:65px;
+height:65px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin:auto;
+margin-bottom:18px;
+
+font-size:26px;
+
+color:white;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+
+}
+
+/* ICON COLORS */
+
+.blue{
+background:#6c4df6;
+}
+
+.green{
+background:#2ecc71;
+}
+
+.orange{
+background:#f39c12;
+}
+
+.purple{
+background:#8e44ad;
+}
+
+/* TEXT */
+
+.card h4{
+font-size:18px;
+margin-bottom:8px;
+color:#333;
+}
+
+.card p{
+font-size:14px;
+color:#666;
+line-height:1.5;
+}
+
+/* BUTTON */
+
+.card a{
+
+display:inline-block;
+margin-top:18px;
+
+background:#6c4df6;
+color:white;
+
+padding:10px 22px;
+
+border-radius:25px;
+
+text-decoration:none;
+
+font-size:14px;
+
+font-weight:500;
+
+transition:0.3s;
+
+}
+
+.card a:hover{
+
+background:#5637e0;
+
+transform:scale(1.05);
+
+box-shadow:0 6px 16px rgba(108,77,246,0.4);
+
+}
+
+</style>
+<style>
+
+.alert-wrapper{
+display:flex;
+justify-content:center;
+margin-top:25px;
+margin-bottom:25px;
+}
+
+.alert-card{
+
+width:750px;
+
+padding:25px;
+
+border-radius:14px;
+
+display:flex;
+align-items:center;
+gap:18px;
+
+font-size:20px;
+font-weight:600;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+animation:slide 0.5s ease;
+
+}
+
+/* HIGH DEMAND */
+
+.alert-high{
+background:linear-gradient(135deg,#00c853,#43a047);
+color:white;
+}
+
+/* TRENDING */
+
+.alert-trend{
+background:linear-gradient(135deg,#ff9800,#ffb74d);
+color:white;
+}
+
+/* LOW DEMAND */
+
+.alert-low{
+background:linear-gradient(135deg,#ff5252,#e53935);
+color:white;
+}
+
+/* OPPORTUNITY */
+
+.alert-opportunity{
+background:linear-gradient(135deg,#2979ff,#42a5f5);
+color:white;
+}
+
+.icon{
+font-size:36px;
+}
+
+.text{
+flex:1;
+}
+
+.title{
+font-size:22px;
+margin-bottom:5px;
+}
+
+@keyframes slide{
+
+0%{
+transform:translateY(-40px);
+opacity:0;
+}
+
+100%{
+transform:translateY(0);
+opacity:1;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/seller_dashboard" class="active">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/add_product">
+<i class="fa fa-plus"></i> Add Product
+</a>
+
+<a href="/view_products">
+<i class="fa fa-box"></i> View Products
+</a>
+
+<a href="/seller_orders">
+<i class="fa fa-shopping-bag"></i> Orders
+</a>
+
+<a href="/seller_analytics">
+<i class="fa fa-chart-line"></i> Analytics
+</a>
+
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="header">
+
+<h2>Seller Dashboard</h2>
+
+<div class="user-box">
+<i class="fa fa-store"></i> Seller Panel
+</div>
+
+</div>
+
+
+<div class="content">
+
+<div class="welcome">
+
+<h1>Welcome Seller 👋</h1>
+<p>Manage your shop products, orders and sales analytics.</p>
+<div class="alert-wrapper">
+
+{% if alert %}
+
+<div class="alert-card
+{% if alert.type == 'high' %} alert-high
+{% elif alert.type == 'trend' %} alert-trend
+{% elif alert.type == 'low' %} alert-low
+{% elif alert.type == 'opportunity' %} alert-opportunity
+{% endif %}
+">
+
+<div class="icon">
+{{alert.icon}}
+</div>
+
+<div class="text">
+
+<div class="title">
+{{alert.title}}
+</div>
+
+<div>
+{{alert.message}}
+</div>
+
+</div>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon-circle blue">
+<i class="fa fa-plus"></i>
+</div>
+
+<h4>Add Product</h4>
+
+<p>Add new items to your store inventory.</p>
+
+<a href="/add_product">Add Product</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon-circle green">
+<i class="fa fa-box"></i>
+</div>
+
+<h4>View Products</h4>
+
+<p>Manage and monitor your product listings.</p>
+
+<a href="/view_products">View Products</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon-circle orange">
+<i class="fa fa-shopping-bag"></i>
+</div>
+
+<h4>Customer Orders</h4>
+
+<p>Approve or reject incoming orders.</p>
+
+<a href="/seller_orders">View Orders</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon-circle purple">
+<i class="fa fa-chart-line"></i>
+</div>
+
+<h4>Sales Analytics</h4>
+
+<p>Track product demand and performance.</p>
+
+<a href="/seller_analytics">View Analytics</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

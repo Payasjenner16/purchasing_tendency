@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>My Cart - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+/* BODY */
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:22px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+padding:20px 40px;
+font-size:20px;
+font-weight:600;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* CART CARD */
+
+.cart-container{
+background:white;
+padding:30px;
+border-radius:14px;
+border:2px solid #ecebff;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+position:relative;
+}
+
+.cart-container:before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#6c4df6,#8b73ff);
+border-radius:14px 14px 0 0;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:14px;
+text-align:left;
+border-bottom:1px solid #eee;
+}
+
+th{
+background:#f7f7ff;
+}
+
+/* IMAGE */
+
+.product-img{
+width:70px;
+height:60px;
+object-fit:cover;
+border-radius:6px;
+}
+
+/* BUTTON */
+
+.order-btn{
+padding:8px 14px;
+background:#28a745;
+color:white;
+text-decoration:none;
+border-radius:20px;
+font-size:13px;
+}
+
+.order-btn:hover{
+background:#1e7e34;
+}
+
+/* EMPTY CART */
+
+.empty{
+text-align:center;
+padding:40px;
+color:#777;
+}
+
+.empty i{
+margin-bottom:10px;
+color:#6c4df6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-user"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/buyer_dashboard">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/recommendations">
+<i class="fa fa-robot"></i> AI Recommendations
+</a>
+
+<a href="/cart" class="active">
+<i class="fa fa-shopping-cart"></i> My Cart
+</a>
+
+<a href="/buyer_orders">
+<i class="fa fa-box"></i> Order History
+</a>
+<a href="/seq">
+<i class="fa fa-project-diagram"></i> Sequential Model
+</a>
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="header">
+<i class="fa fa-shopping-cart"></i> Your Cart
+</div>
+
+
+<div class="content">
+
+<div class="cart-container">
+
+{% if items %}
+
+<table>
+
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Image</th>
+<th>Action</th>
+</tr>
+
+{% for i in items %}
+
+<tr>
+
+<td>{{i.name}}</td>
+
+<td>₹ {{i.price}}</td>
+
+<td>
+<img src="/static/uploads/products/{{i.image}}" class="product-img">
+</td>
+
+<td>
+
+<a href="/place_order/{{i.product_id}}" class="order-btn">
+<i class="fa fa-check"></i> Place Order
+</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% else %}
+
+<div class="empty">
+
+<i class="fa fa-shopping-cart fa-2x"></i>
+
+<p>Your cart is empty.</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>My Products - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+/* BODY */
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.sidebar .logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.sidebar .logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:24px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+font-weight:600;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.header h2{
+color:#444;
+}
+
+.user-box{
+display:flex;
+align-items:center;
+gap:10px;
+color:#555;
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* PAGE TITLE */
+
+.page-title{
+margin-bottom:25px;
+font-size:24px;
+color:#333;
+}
+
+/* GRID */
+
+.products-grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+
+background:white;
+border-radius:14px;
+
+border:2px solid #ecebff;
+
+overflow:hidden;
+
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+
+transition:0.35s;
+
+position:relative;
+
+}
+
+/* TOP ACCENT */
+
+.product-card:before{
+
+content:"";
+
+position:absolute;
+top:0;
+left:0;
+
+width:100%;
+height:4px;
+
+background:linear-gradient(90deg,#6c4df6,#8b73ff);
+
+}
+
+/* IMAGE */
+
+.product-card img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+
+transition:0.35s;
+
+}
+
+/* IMAGE HOVER */
+
+.product-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/* CARD HOVER */
+
+.product-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 16px 35px rgba(0,0,0,0.15);
+
+}
+
+/* BODY */
+
+.product-body{
+
+padding:18px;
+
+}
+
+/* TITLE */
+
+.product-body h4{
+
+font-size:18px;
+margin-bottom:6px;
+color:#333;
+
+}
+
+/* PRICE */
+
+.price{
+
+color:#6c4df6;
+
+font-weight:700;
+
+font-size:18px;
+
+margin-bottom:10px;
+
+}
+
+/* SPEC */
+
+.spec{
+
+font-size:13px;
+color:#666;
+
+line-height:1.5;
+
+height:40px;
+
+overflow:hidden;
+
+margin-bottom:14px;
+
+}
+
+/* ACTIONS */
+
+.product-actions{
+
+display:flex;
+gap:10px;
+
+}
+
+/* BUTTONS */
+
+.btn{
+
+flex:1;
+
+padding:8px;
+
+border-radius:8px;
+
+text-align:center;
+
+text-decoration:none;
+
+color:white;
+
+font-size:14px;
+
+transition:0.25s;
+
+}
+
+/* EDIT */
+
+.btn-edit{
+background:#6c4df6;
+}
+
+.btn-edit:hover{
+
+background:#5637e0;
+
+transform:scale(1.05);
+
+}
+
+/* DELETE */
+
+.btn-delete{
+background:#ff4d4d;
+}
+
+.btn-delete:hover{
+
+background:#e60023;
+
+transform:scale(1.05);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.products-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:900px){
+
+.products-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/seller_dashboard">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/add_product">
+<i class="fa fa-plus"></i> Add Product
+</a>
+
+<a href="/view_products" class="active">
+<i class="fa fa-box"></i> View Products
+</a>
+
+<a href="/seller_orders">
+<i class="fa fa-shopping-bag"></i> Orders
+</a>
+
+<a href="/seller_analytics">
+<i class="fa fa-chart-line"></i> Analytics
+</a>
+
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="header">
+
+<h2>Seller Dashboard</h2>
+
+<div class="user-box">
+<i class="fa fa-store"></i> Seller Panel
+</div>
+
+</div>
+
+
+<div class="content">
+
+<div class="page-title">
+
+<i class="fa fa-box"></i> My Products
+
+</div>
+
+
+<div class="products-grid">
+
+{% for p in products %}
+
+<div class="product-card">
+
+<img src="/static/uploads/products/{{p.image}}">
+
+<div class="product-body">
+
+<h4>{{p.name}}</h4>
+
+<div class="price">₹ {{p.price }}</div>
+
+<div class="spec">{{p.specification}}</div>
+
+<div class="product-actions">
+
+<a href="/edit_product/{{p.id}}" class="btn btn-edit">
+<i class="fa fa-edit"></i>
+</a>
+
+<a href="/delete_product/{{p.id}}" class="btn btn-delete">
+<i class="fa fa-trash"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+Customer_ID,Location,Product_Category,Product_Name,Community,Purchase_Step,Season,Purchase_Date
+C021,Chennai,Electronics,Wireless Mouse,Electronics Buyers,2,Winter,2025-03-04
+C005,Coimbatore,Electronics,Wireless Mouse,Electronics Buyers,3,Festival,2025-05-20
+C019,Delhi,Electronics,Smartphone,Electronics Buyers,1,Winter,2025-02-25
+C017,Hyderabad,Electronics,Laptop Bag,Electronics Buyers,1,Regular,2025-07-03
+C008,Delhi,Fashion,Jewelry,Fashion Buyers,1,Winter,2025-07-14
+C023,Delhi,Fashion,Shoes,Fashion Buyers,1,Summer,2025-02-25
+C004,Chennai,Fashion,Shirt,Fashion Buyers,2,Summer,2025-03-30
+C026,Chennai,Fashion,Traditional Dress,Fashion Buyers,1,Festival,2025-04-07
+C018,Mumbai,Fashion,Traditional Dress,Fashion Buyers,1,Festival,2025-06-30
+C002,Coimbatore,Electronics,Headphones,Electronics Buyers,2,Winter,2025-01-21
+C028,Chennai,Fashion,Shoes,Fashion Buyers,2,Summer,2025-06-12
+C006,Mumbai,Fashion,Dress,Fashion Buyers,3,Festival,2025-03-10
+C020,Coimbatore,Electronics,Laptop Bag,Electronics Buyers,3,Winter,2025-03-04
+C015,Delhi,Fashion,Footwear,Fashion Buyers,3,Winter,2025-05-23
+C022,Mumbai,Electronics,Phone Case,Electronics Buyers,1,Regular,2025-03-22
+C009,Chennai,Electronics,Laptop Bag,Electronics Buyers,3,Winter,2025-03-22
+C021,Delhi,Fashion,Footwear,Fashion Buyers,2,Summer,2025-02-06
+C005,Bangalore,Fashion,Footwear,Fashion Buyers,3,Regular,2025-04-20
+C012,Bangalore,Electronics,Laptop Bag,Electronics Buyers,2,Festival,2025-01-24
+C028,Chennai,Electronics,Wireless Mouse,Electronics Buyers,1,Regular,2025-06-24
+C020,Chennai,Fashion,Handbag,Fashion Buyers,3,Summer,2025-04-30
+C018,Chennai,Electronics,Wireless Mouse,Electronics Buyers,3,Summer,2025-07-12
+C025,Coimbatore,Fashion,Shirt,Fashion Buyers,2,Winter,2025-04-22
+C015,Chennai,Fashion,Traditional Dress,Fashion Buyers,1,Festival,2025-05-10
+C028,Coimbatore,Fashion,Jewelry,Fashion Buyers,3,Winter,2025-05-10
+C005,Mumbai,Electronics,Laptop Bag,Electronics Buyers,3,Summer,2025-01-01
+C016,Chennai,Electronics,Wireless Earbuds,Electronics Buyers,2,Festival,2025-03-03
+C008,Hyderabad,Electronics,Smartphone,Electronics Buyers,3,Festival,2025-05-05
+C025,Hyderabad,Electronics,Phone Case,Electronics Buyers,3,Winter,2025-05-02
+C009,Hyderabad,Fashion,Dress,Fashion Buyers,3,Winter,2025-07-13
+C023,Mumbai,Fashion,Footwear,Fashion Buyers,3,Regular,2025-04-06
+C029,Hyderabad,Fashion,Shirt,Fashion Buyers,1,Festival,2025-02-27
+C011,Chennai,Electronics,Laptop Bag,Electronics Buyers,1,Festival,2025-01-02
+C023,Coimbatore,Electronics,Phone Case,Electronics Buyers,1,Summer,2025-01-09
+C003,Hyderabad,Electronics,Wireless Earbuds,Electronics Buyers,3,Winter,2025-05-05
+C018,Bangalore,Fashion,Dress,Fashion Buyers,2,Winter,2025-04-15
+C004,Chennai,Fashion,Shoes,Fashion Buyers,2,Regular,2025-04-16
+C028,Coimbatore,Electronics,Wireless Mouse,Electronics Buyers,3,Festival,2025-06-15
+C002,Delhi,Fashion,Jewelry,Fashion Buyers,1,Winter,2025-03-05
+C007,Hyderabad,Fashion,Dress,Fashion Buyers,2,Summer,2025-02-16
+C015,Bangalore,Electronics,Laptop,Electronics Buyers,3,Festival,2025-01-26
+C021,Hyderabad,Electronics,Smartphone,Electronics Buyers,1,Regular,2025-02-12
+C016,Delhi,Electronics,Headphones,Electronics Buyers,2,Winter,2025-01-16
+C013,Chennai,Fashion,Shoes,Fashion Buyers,2,Regular,2025-03-15
+C023,Coimbatore,Fashion,Dress,Fashion Buyers,1,Winter,2025-03-17
+C002,Hyderabad,Electronics,Wireless Mouse,Electronics Buyers,2,Festival,2025-01-15
+C019,Delhi,Electronics,Smartphone,Electronics Buyers,3,Winter,2025-01-21
+C003,Hyderabad,Electronics,Wireless Mouse,Electronics Buyers,1,Festival,2025-04-14
+C029,Hyderabad,Electronics,Laptop Bag,Electronics Buyers,3,Festival,2025-01-11
+C014,Coimbatore,Fashion,Shoes,Fashion Buyers,1,Summer,2025-06-21
+C008,Mumbai,Fashion,Dress,Fashion Buyers,3,Summer,2025-06-15
+C015,Mumbai,Electronics,Smartphone,Electronics Buyers,2,Festival,2025-06-09
+C003,Hyderabad,Electronics,Laptop Bag,Electronics Buyers,2,Summer,2025-02-03
+C029,Chennai,Electronics,Wireless Earbuds,Electronics Buyers,2,Regular,2025-02-10
+C027,Hyderabad,Fashion,Traditional Dress,Fashion Buyers,3,Festival,2025-05-16
+C022,Hyderabad,Fashion,Footwear,Fashion Buyers,1,Summer,2025-02-04
+C004,Chennai,Electronics,Wireless Earbuds,Electronics Buyers,2,Winter,2025-06-04
+C023,Mumbai,Electronics,Wireless Mouse,Electronics Buyers,3,Regular,2025-03-09
+C009,Chennai,Electronics,Wireless Mouse,Electronics Buyers,2,Festival,2025-03-12
+C001,Mumbai,Electronics,Wireless Mouse,Electronics Buyers,2,Regular,2025-02-11
+C018,Coimbatore,Fashion,Traditional Dress,Fashion Buyers,1,Festival,2025-01-29
+C029,Coimbatore,Electronics,Laptop Bag,Electronics Buyers,1,Winter,2025-04-05
+C014,Bangalore,Electronics,Wireless Earbuds,Electronics Buyers,2,Summer,2025-01-11
+C007,Coimbatore,Electronics,Wireless Mouse,Electronics Buyers,1,Regular,2025-04-01
+C020,Coimbatore,Electronics,Phone Case,Electronics Buyers,1,Regular,2025-02-15
+C001,Bangalore,Fashion,Jewelry,Fashion Buyers,2,Winter,2025-06-21
+C009,Bangalore,Electronics,Laptop,Electronics Buyers,1,Winter,2025-05-01
+C007,Delhi,Fashion,Shoes,Fashion Buyers,1,Festival,2025-02-27
+C022,Bangalore,Fashion,Shoes,Fashion Buyers,2,Summer,2025-01-18
+C012,Coimbatore,Fashion,Footwear,Fashion Buyers,3,Festival,2025-03-26
+C004,Mumbai,Electronics,Laptop Bag,Electronics Buyers,2,Festival,2025-01-10
+C020,Delhi,Fashion,Footwear,Fashion Buyers,2,Festival,2025-04-22
+C013,Hyderabad,Electronics,Wireless Earbuds,Electronics Buyers,1,Regular,2025-07-01
+C001,Hyderabad,Electronics,Wireless Earbuds,Electronics Buyers,2,Summer,2025-01-18
+C020,Mumbai,Electronics,Wireless Mouse,Electronics Buyers,2,Summer,2025-05-10
+C022,Delhi,Fashion,Handbag,Fashion Buyers,3,Winter,2025-03-17
+C007,Delhi,Fashion,Footwear,Fashion Buyers,3,Summer,2025-02-14
+C013,Hyderabad,Electronics,Wireless Earbuds,Electronics Buyers,2,Regular,2025-02-23
+C026,Hyderabad,Fashion,Handbag,Fashion Buyers,2,Winter,2025-04-24
+C017,Delhi,Electronics,Wireless Mouse,Electronics Buyers,1,Summer,2025-03-14
+C003,Bangalore,Fashion,Dress,Fashion Buyers,1,Festival,2025-02-07
+C002,Bangalore,Fashion,Traditional Dress,Fashion Buyers,1,Regular,2025-04-27
+C029,Coimbatore,Electronics,Wireless Mouse,Electronics Buyers,3,Regular,2025-04-09
+C013,Bangalore,Electronics,Wireless Mouse,Electronics Buyers,3,Festival,2025-01-02
+C025,Delhi,Electronics,Phone Case,Electronics Buyers,3,Regular,2025-05-13
+C002,Hyderabad,Electronics,Headphones,Electronics Buyers,1,Winter,2025-04-27
+C026,Delhi,Fashion,Jewelry,Fashion Buyers,2,Regular,2025-06-06
+C027,Hyderabad,Fashion,Dress,Fashion Buyers,3,Regular,2025-05-02
+C009,Bangalore,Fashion,Jewelry,Fashion Buyers,3,Winter,2025-05-05
+C009,Delhi,Electronics,Wireless Mouse,Electronics Buyers,2,Summer,2025-03-02
+C011,Mumbai,Electronics,Phone Case,Electronics Buyers,1,Regular,2025-03-01
+C023,Bangalore,Electronics,Smartphone,Electronics Buyers,2,Summer,2025-04-15
+C018,Delhi,Fashion,Shirt,Fashion Buyers,1,Regular,2025-04-18
+C029,Hyderabad,Electronics,Headphones,Electronics Buyers,3,Regular,2025-04-08
+C001,Mumbai,Fashion,Jewelry,Fashion Buyers,2,Winter,2025-04-18
+C016,Bangalore,Fashion,Handbag,Fashion Buyers,2,Regular,2025-01-08
+C011,Coimbatore,Fashion,Footwear,Fashion Buyers,1,Winter,2025-04-30
+C020,Hyderabad,Electronics,Laptop,Electronics Buyers,3,Festival,2025-05-25
+C003,Coimbatore,Fashion,Dress,Fashion Buyers,2,Festival,2025-02-16
+C009,Delhi,Fashion,Dress,Fashion Buyers,2,Summer,2025-03-25
+C025,Delhi,Fashion,Jewelry,Fashion Buyers,2,Festival,2025-03-06
+C016,Chennai,Electronics,Wireless Earbuds,Electronics Buyers,1,Festival,2025-06-16
+C025,Coimbatore,Electronics,Headphones,Electronics Buyers,1,Winter,2025-03-05
+C027,Chennai,Electronics,Phone Case,Electronics Buyers,1,Festival,2025-05-02
+C019,Bangalore,Fashion,Footwear,Fashion Buyers,2,Summer,2025-07-16
+C006,Hyderabad,Electronics,Headphones,Electronics Buyers,1,Festival,2025-03-21
+C019,Chennai,Fashion,Traditional Dress,Fashion Buyers,3,Regular,2025-04-07
+C023,Bangalore,Electronics,Laptop Bag,Electronics Buyers,3,Winter,2025-06-10
+C004,Coimbatore,Fashion,Jewelry,Fashion Buyers,3,Festival,2025-06-03
+C026,Hyderabad,Electronics,Wireless Earbuds,Electronics Buyers,3,Summer,2025-04-20
+C003,Hyderabad,Fashion,Shirt,Fashion Buyers,2,Festival,2025-05-06
+C014,Mumbai,Fashion,Footwear,Fashion Buyers,1,Winter,2025-04-22
+C024,Hyderabad,Fashion,Traditional Dress,Fashion Buyers,3,Regular,2025-07-18
+C015,Delhi,Fashion,Shoes,Fashion Buyers,1,Summer,2025-01-23
+C029,Delhi,Electronics,Headphones,Electronics Buyers,2,Regular,2025-05-26
+C011,Chennai,Fashion,Jewelry,Fashion Buyers,2,Regular,2025-02-16
+C007,Mumbai,Fashion,Shoes,Fashion Buyers,2,Summer,2025-06-02
+C018,Chennai,Electronics,Smartphone,Electronics Buyers,1,Regular,2025-07-04
+C016,Hyderabad,Electronics,Wireless Mouse,Electronics Buyers,2,Regular,2025-06-15
+C015,Chennai,Electronics,Wireless Earbuds,Electronics Buyers,1,Winter,2025-04-14

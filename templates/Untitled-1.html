@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purchasing Tendency System</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#e6b8b2;
+color:#0b1a4a;
+overflow-x:hidden;
+position:relative;
+}
+
+
+/* dotted background */
+
+body::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background-image: radial-gradient(#ffffff33 1px, transparent 1px);
+background-size:35px 35px;
+top:0;
+left:0;
+pointer-events:none;
+}
+
+
+
+/* floating animation */
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
+
+
+/* NAVBAR */
+
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:40px 100px;
+z-index:10;
+position:relative;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:12px;
+
+background:#153e88;
+padding:30px 60px;
+border-bottom-right-radius:60px;
+
+color:white;
+font-size:26px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.logo-box i{
+font-size:30px;
+color:#ffffff;
+}
+
+nav{
+display:flex;
+gap:70px;
+}
+
+nav a{
+text-decoration:none;
+color:#0b1a4a;
+font-size:18px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#153e88;
+}
+
+.search-box{
+border:2px solid #0b1a4a;
+border-radius:15px;
+padding:12px 20px;
+width:220px;
+}
+
+
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 120px;
+position:relative;
+z-index:2;
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero-text span{
+font-size:55px;
+font-weight:400;
+}
+
+.hero-text h1{
+font-size:80px;
+font-weight:800;
+line-height:80px;
+}
+
+.hero-text p{
+margin-top:30px;
+font-size:16px;
+line-height:28px;
+}
+
+.btn{
+margin-top:35px;
+display:inline-block;
+background:#0b1a4a;
+color:white;
+padding:16px 34px;
+border-radius:35px;
+text-decoration:none;
+font-weight:600;
+}
+
+
+
+/* IMAGE */
+
+.hero-image{
+position:relative;
+border:12px solid #153e88;
+border-radius:35px;
+overflow:hidden;
+}
+
+.hero-image img{
+width:560px;
+display:block;
+}
+
+
+
+/* floating icons */
+
+.icon-box{
+position:absolute;
+width:90px;
+height:90px;
+background:white;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+animation:float 4s infinite ease-in-out;
+}
+
+.icon1{
+top:140px;
+right:420px;
+background:#153e88;
+color:white;
+}
+
+.icon2{
+bottom:120px;
+left:700px;
+background:white;
+}
+
+.icon3{
+bottom:140px;
+right:150px;
+background:#9a4b26;
+color:white;
+}
+
+.icon4{
+top:300px;
+left:700px;
+background:white;
+}
+
+
+
+/* arrows */
+
+.arrow{
+position:absolute;
+font-size:60px;
+color:#9a4b26;
+animation:float 3s infinite;
+}
+
+.arrow1{
+top:230px;
+left:760px;
+}
+
+.arrow2{
+top:520px;
+left:520px;
+}
+
+
+
+/* triangle */
+
+.triangle-left{
+position:absolute;
+bottom:170px;
+left:120px;
+width:0;
+height:0;
+border-top:40px solid transparent;
+border-bottom:40px solid transparent;
+border-left:70px solid #9a4b26;
+}
+
+
+
+/* big rounded corner block */
+
+.corner-shape{
+position:absolute;
+right:0;
+top:280px;
+width:200px;
+height:200px;
+background:#153e88;
+clip-path:polygon(0 0,100% 50%,0 100%);
+}
+
+
+
+/* decorative dots */
+
+.bottom-dots{
+position:absolute;
+bottom:120px;
+right:420px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.bottom-dots span{
+width:8px;
+height:8px;
+background:#4b2c20;
+border-radius:50%;
+}
+
+
+
+/* responsive */
+
+@media(max-width:1000px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image{
+margin-top:40px;
+}
+
+nav{
+display:none;
+}
+
+.icon-box{
+display:none;
+}
+
+}
+/* NAVBAR CONTAINER */
+
+.glass-nav{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+
+/* NAV BUTTONS */
+
+.nav-link{
+text-decoration:none;
+color:#0b1a4a;
+padding:12px 28px;
+border-radius:30px;
+font-weight:500;
+font-size:16px;
+
+/* glass effect */
+background:rgba(22, 0, 131, 0.25);
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,255,255,0.4);
+
+transition:all .3s ease;
+}
+
+
+/* HOVER EFFECT */
+
+.nav-link:hover{
+background:#153e88;
+color:white;
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+/* ACTIVE CLICK EFFECT */
+
+.nav-link:active{
+transform:scale(.95);
+box-shadow:none;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+<div class="logo-box">
+<i class="fa-solid fa-chart-line"></i>
+<span>Purchasing Tendency</span>
+</div>
+
+<nav class="glass-nav">
+<a href="/admin" class="nav-link">Admin</a>
+<a href="/seller_login" class="nav-link">Seller</a>
+<a href="/buyer_login" class="nav-link">Buyer</a>
+</nav>
+<input class="search-box" placeholder="Search">
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<span>high quality</span>
+<h1>PRODUCTS</h1>
+
+<p>
+Purchasing tendency analysis system for e-commerce. Discover demand insights,
+personalized recommendations, and customer behavior patterns using
+TendGraphNet and SeqBehNet models.
+</p>
+
+<a href="#" class="btn">Order now</a>
+
+</div>
+
+
+
+<div class="hero-image">
+
+<img src="../static/css/hero.png">
+
+</div>
+
+</section>
+
+
+
+<!-- floating icons -->
+
+<div class="icon-box icon1">📊</div>
+<div class="icon-box icon2">🛒</div>
+<div class="icon-box icon3">📦</div>
+<div class="icon-box icon4">📍</div>
+
+
+
+<!-- decorations -->
+
+<div class="arrow arrow1">➜</div>
+<div class="arrow arrow2">➜</div>
+
+<div class="triangle-left"></div>
+
+<div class="corner-shape"></div>
+
+<div class="bottom-dots">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
+
+</body>
+</html>

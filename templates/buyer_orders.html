@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Order History - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+/* BODY */
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:22px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+padding:20px 40px;
+font-size:20px;
+font-weight:600;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+}
+
+/* ORDER CARD */
+
+.order-container{
+background:white;
+padding:30px;
+border-radius:14px;
+border:2px solid #ecebff;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+position:relative;
+}
+
+.order-container:before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#6c4df6,#8b73ff);
+border-radius:14px 14px 0 0;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:14px;
+text-align:left;
+border-bottom:1px solid #eee;
+}
+
+th{
+background:#f7f7ff;
+}
+
+/* BADGES */
+
+.badge{
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+color:white;
+}
+
+.badge-success{
+background:#28a745;
+}
+
+.badge-danger{
+background:#dc3545;
+}
+
+.badge-warning{
+background:#ffc107;
+color:black;
+}
+
+.badge-paid{
+background:#17a2b8;
+}
+
+.badge-unpaid{
+background:#6c757d;
+}
+
+/* PAYMENT BUTTON */
+
+.pay-btn{
+padding:8px 14px;
+background:#6c4df6;
+color:white;
+text-decoration:none;
+border-radius:20px;
+font-size:13px;
+}
+
+.pay-btn:hover{
+background:#5636e6;
+}
+
+/* EMPTY */
+
+.empty{
+text-align:center;
+padding:40px;
+color:#777;
+}
+
+.empty i{
+margin-bottom:10px;
+color:#6c4df6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-user"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/buyer_dashboard">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/recommendations">
+<i class="fa fa-robot"></i> AI Recommendations
+</a>
+
+<a href="/cart">
+<i class="fa fa-shopping-cart"></i> My Cart
+</a>
+
+<a href="/buyer_orders" class="active">
+<i class="fa fa-box"></i> Order History
+</a>
+<a href="/seq">
+<i class="fa fa-project-diagram"></i> Sequential Model
+</a>
+
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="header">
+<i class="fa fa-box"></i> Order History
+</div>
+
+
+<div class="content">
+
+<div class="order-container">
+
+{% if orders %}
+
+<table>
+
+<tr>
+<th>Product</th>
+<th>Status</th>
+<th>Payment</th>
+<th>Action</th>
+</tr>
+
+
+{% for o in orders %}
+
+<tr>
+
+<td>{{o.name}}</td>
+
+<td>
+
+{% if o.status == 'approved' %}
+
+<span class="badge badge-success">Approved</span>
+
+{% elif o.status == 'rejected' %}
+
+<span class="badge badge-danger">Rejected</span>
+
+{% else %}
+
+<span class="badge badge-warning">Pending</span>
+
+{% endif %}
+
+</td>
+
+
+<td>
+
+{% if o.payment_status == 'paid' %}
+
+<span class="badge badge-paid">Paid</span>
+
+{% else %}
+
+<span class="badge badge-unpaid">Unpaid</span>
+
+{% endif %}
+
+</td>
+
+
+<td>
+
+{% if o.status == 'approved' and o.payment_status == 'unpaid' %}
+
+<a href="/pay/{{o.id}}" class="pay-btn">
+<i class="fa fa-credit-card"></i> Pay via UPI
+</a>
+
+{% else %}
+
+<span style="color:#888">No Action</span>
+
+{% endif %}
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% else %}
+
+<div class="empty">
+
+<i class="fa fa-box-open fa-2x"></i>
+
+<p>You have no orders yet.</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

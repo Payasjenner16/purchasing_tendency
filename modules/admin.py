@@ -23,7 +23,6 @@ def admin_dashboard():
 
     if "admin" not in session:
         return redirect("/admin")
-
     conn=get_db()
     cur=conn.cursor()
 
@@ -54,7 +53,6 @@ def admin_analytics():
     GROUP BY interactions.product_id
     ORDER BY score DESC
     """)
-
     products=cur.fetchall()
 
     return render_template("admin_analytics.html",products=products)

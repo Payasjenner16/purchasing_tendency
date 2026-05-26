@@ -27,10 +27,6 @@ app.register_blueprint(admin_bp)
 app.register_blueprint(seller_bp)
 app.register_blueprint(buyer_bp)
 
-# ------------------------------------------------
-# HOME
-# ------------------------------------------------
-
 @app.route("/")
 def index():
     conn = get_db()

@@ -438,6 +438,66 @@ def view_products():
     return render_template("view_products.html",products=products)
 
 # ------------------------------------------------
+# SELLER EDIT ORDERS
+# ------------------------------------------------
+@seller_bp.route("/edit_product/<id>", methods=["GET", "POST"])
+def edit_product(id):
+
+    if "seller" not in session:
+        return redirect("/seller_login")
+
+    conn=get_db()
+    cur=conn.cursor()
+
+    if request.method=="POST":
+
+        name=request.form["name"]
+        price=request.form["price"]
+        specification=request.form["specification"]
+
+        if "image" in request.files and request.files["image"].filename != "":
+            file=request.files["image"]
+            filename=file.filename
+            filepath=os.path.join(current_app.config["UPLOAD_FOLDER"],filename)
+            file.save(filepath)
+
+            cur.execute("""
+            UPDATE products
+            SET name=?, price=?, specification=?, image=?
+            WHERE id=? AND seller_id=?
+            """,(name, price, specification, filename, id, session["seller"]))
+        else:
+            cur.execute("""
+            UPDATE products
+            SET name=?, price=?, specification=?
+            WHERE id=? AND seller_id=?
+            """,(name, price, specification, id, session["seller"]))
+
+        conn.commit()
+        return redirect("/view_products")
+
+    cur.execute("SELECT * FROM products WHERE id=? AND seller_id=?", (id, session["seller"]))
+    product=cur.fetchone()
+
+    if not product:
+        return redirect("/view_products")
+
+    return render_template("edit_product.html", product=product)
+
+@seller_bp.route("/delete_product/<id>")
+def delete_product(id):
+
+    if "seller" not in session:
+        return redirect("/seller_login")
+
+    conn=get_db()
+    cur=conn.cursor()
+
+    cur.execute("DELETE FROM products WHERE id=? AND seller_id=?", (id, session["seller"]))
+    conn.commit()
+
+    return redirect("/view_products")
+# ------------------------------------------------
 # SELLER VIEW ORDERS
 # ------------------------------------------------
 

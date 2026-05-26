@@ -276,8 +276,11 @@ locationDemand[p.name]+=p.demand;
 
 });
 
-var productNames = Object.keys(productDemand);
-var productCounts = Object.values(productDemand);
+var productArray = [];
+for (var pName in productDemand) {
+    productArray.push({name: pName, count: productDemand[pName]});
+}
+productArray.sort(function(a, b) { return b.count - a.count; });
 
 var locationNames = Object.keys(locationDemand);
 var locationCounts = Object.values(locationDemand);
@@ -285,9 +288,11 @@ var locationCounts = Object.values(locationDemand);
 /* LIMIT PRODUCTS TO 25 */
 
 var LIMIT_PRODUCTS = 25;
+var topProducts = productArray.slice(0, LIMIT_PRODUCTS);
 
-productNames = productNames.slice(0, LIMIT_PRODUCTS);
 productCounts = productCounts.slice(0, LIMIT_PRODUCTS);
+var productNames = topProducts.map(function(p) { return p.name; });
+var productCounts = topProducts.map(function(p) { return p.count; });
 
 /* DONUT */
 

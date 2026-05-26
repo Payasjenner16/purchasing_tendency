@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Edit Product - TendGraph</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f6f7fb;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(160deg,#6c4df6,#8b73ff);
+padding:30px 20px;
+position:fixed;
+}
+
+.sidebar .logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.sidebar .logo span{
+color:#ddd;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+padding-left:24px;
+}
+
+.sidebar a.active{
+background:white;
+color:#6c4df6;
+font-weight:600;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+width:100%;
+}
+
+/* HEADER */
+
+.topbar{
+background:white;
+padding:20px 40px;
+display:flex;
+align-items:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.topbar h3{
+color:#444;
+font-size:20px;
+}
+
+/* CONTENT */
+
+.content{
+padding:40px;
+display:flex;
+justify-content:center;
+}
+
+/* FORM CARD */
+
+.form-card{
+
+width:600px;
+
+background:white;
+
+padding:35px;
+
+border-radius:14px;
+
+border:2px solid #e8e8ff;
+
+box-shadow:0 8px 25px rgba(0,0,0,0.06);
+
+position:relative;
+
+}
+
+/* TOP BORDER ACCENT */
+
+.form-card:before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:5px;
+
+background:linear-gradient(90deg,#6c4df6,#8b73ff);
+
+border-radius:14px 14px 0 0;
+
+}
+
+.form-card h2{
+margin-bottom:25px;
+color:#333;
+}
+
+/* INPUT GROUP */
+
+.input-group{
+margin-bottom:20px;
+}
+
+.input-group label{
+font-weight:600;
+display:block;
+margin-bottom:6px;
+color:#444;
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:12px;
+
+border-radius:8px;
+
+border:1px solid #dcdcff;
+
+outline:none;
+
+transition:0.3s;
+
+font-size:14px;
+
+}
+
+.input-group textarea{
+resize:none;
+height:100px;
+}
+
+/* INPUT HOVER */
+
+.input-group input:focus,
+.input-group textarea:focus{
+
+border-color:#6c4df6;
+
+box-shadow:0 0 6px rgba(108,77,246,0.25);
+
+}
+
+/* IMAGE UPLOAD */
+
+.upload-box{
+
+border:2px dashed #d4d4ff;
+
+border-radius:10px;
+
+padding:25px;
+
+text-align:center;
+
+background:#fafaff;
+
+transition:0.3s;
+
+}
+
+.upload-box:hover{
+
+background:#f3f2ff;
+
+border-color:#6c4df6;
+
+}
+
+.upload-box input{
+
+margin-top:10px;
+
+}
+
+/* BUTTON */
+
+.submit-btn{
+
+margin-top:10px;
+
+background:#6c4df6;
+
+color:white;
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:25px;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.submit-btn:hover{
+
+background:#5637e0;
+
+transform:scale(1.05);
+
+box-shadow:0 6px 16px rgba(108,77,246,0.35);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa fa-chart-line"></i> Tend<span>Graph</span>
+</div>
+
+<a href="/seller_dashboard">
+<i class="fa fa-home"></i> Dashboard
+</a>
+
+<a href="/add_product">
+<i class="fa fa-plus"></i> Add Product
+</a>
+
+<a href="/view_products" class="active">
+<i class="fa fa-box"></i> View Products
+</a>
+
+<a href="/seller_orders">
+<i class="fa fa-shopping-bag"></i> Orders
+</a>
+
+<a href="/seller_analytics">
+<i class="fa fa-chart-line"></i> Analytics
+</a>
+
+<a href="/logout">
+<i class="fa fa-sign-out-alt"></i> Logout
+</a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+
+<div class="topbar">
+
+<h3>
+<i class="fa fa-edit"></i> Edit Product
+</h3>
+
+</div>
+
+
+<div class="content">
+
+
+<div class="form-card">
+
+<h2><i class="fa fa-edit"></i> Edit Product Details</h2>
+
+<form method="post" enctype="multipart/form-data">
+
+
+<div class="input-group">
+<label>Product Name</label>
+<input type="text" name="name" value="{{product.name}}" placeholder="Enter product name">
+</div>
+
+
+<div class="input-group">
+<label>Price</label>
+<input type="text" name="price" value="{{product.price}}" placeholder="Enter product price">
+</div>
+
+
+<div class="input-group">
+<label>Specification</label>
+<textarea name="specification" placeholder="Enter product specification">{{product.specification}}</textarea>
+</div>
+
+
+<div class="input-group">
+
+<label>Product Image (leave blank to keep current image)</label>
+
+<div class="upload-box">
+
+<i class="fa fa-image fa-2x"></i>
+
+<br>
+
+<input type="file" name="image">
+
+</div>
+
+</div>
+
+
+<button class="submit-btn">
+<i class="fa fa-save"></i> Save Changes
+</button>
+
+</form>
+
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

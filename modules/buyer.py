@@ -2,7 +2,6 @@ from flask import Blueprint, render_template, request, redirect, session
 import numpy as np
 
 from modules.utils import get_db, df
-from modules.ai_helper import recommender
 
 buyer_bp = Blueprint("buyer", __name__)
 
@@ -467,17 +466,24 @@ def recommendations():
     conn = get_db()
     cur = conn.cursor()
 
-    buyer_id = session["buyer"]
+    # Step 1: Find top recommended product names by interaction score
+    cur.execute("""
+        SELECT p.name, COUNT(i.product_id) AS score
+        FROM interactions i
+        JOIN products p ON p.id = i.product_id
+        GROUP BY p.name
+        ORDER BY score DESC
+        LIMIT 5
+    """)
 
-    # Step 1: Use GNN model to get list of recommended product IDs ordered by similarity
-    recommended_ids = recommender.get_gnn_recommendations(buyer_id)
+    top_products = cur.fetchall()
+    product_names = [p["name"] for p in top_products]
 
-    if not recommended_ids:
+    if not product_names:
         return render_template("recommendations.html", products=[])
 
-    # Step 2: Fetch products from database that exist in GNN recommendations
-    # Fetch details for the first 5 products from GNN that exist in SQLite
-    format_strings = ','.join(['?'] * len(recommended_ids))
+    # Step 2: Get ALL sellers selling those products
+    format_strings = ','.join(['?'] * len(product_names))
 
     query = f"""
         SELECT 
@@ -495,20 +501,11 @@ def recommendations():
         FROM products
         JOIN sellers ON sellers.id = products.seller_id
 
-        WHERE products.id IN ({format_strings})
+        WHERE products.name IN ({format_strings})
     """
 
-    cur.execute(query, tuple(recommended_ids))
-    all_recs = cur.fetchall()
-
-    # Order the retrieved products according to the GNN rank list
-    recs_map = {r["id"]: r for r in all_recs}
-    recs = []
-    for pid in recommended_ids:
-        if pid in recs_map:
-            recs.append(recs_map[pid])
-            if len(recs) == 5:
-                break
+    cur.execute(query, tuple(product_names))
+    recs = cur.fetchall()
 
     return render_template("recommendations.html", products=recs)
 
@@ -531,77 +528,64 @@ def seq():
         FROM orders
         JOIN products ON products.id = orders.product_id
         WHERE orders.buyer_id=?
-        ORDER BY orders.id ASC
+        ORDER BY orders.id DESC
     """, (buyer_id,))
 
     history = cur.fetchall()
     purchased_products = [h["name"] for h in history]
 
-    # Map purchase history database IDs
-    purchase_history_pids = [h["id"] for h in history]
+    if not history:
+        conn.close()
+        return render_template(
+            "seq.html",
+            purchased_products=[],
+            products=[]
+        )
 
-    # Get SASRec predictions
-    predicted_pids = recommender.get_seq_recommendations(buyer_id, purchase_history_pids)
-
-    # Fetch predicted product details
-    dl_products = []
-    if predicted_pids:
-        format_strings = ','.join(['?'] * len(predicted_pids))
-        cur.execute(f"""
-            SELECT id, name, price, image, seller_id
-            FROM products
-            WHERE id IN ({format_strings})
-        """, tuple(predicted_pids))
-        all_dl_products = cur.fetchall()
-        
-        # Order by SASRec rank
-        dl_map = {p["id"]: p for p in all_dl_products}
-        for pid in predicted_pids:
-            if pid in dl_map:
-                dl_products.append(dl_map[pid])
-                if len(dl_products) == 6:
-                    break
+    last_product = history[0]
+    product_name = last_product["name"].lower()
+    product_id = last_product["id"]
 
     # --------------------------------
-    # RULE-BASED ACCESSORIES RECOMMENDATIONS
+    # ACCESSORY KEYWORDS
+    # --------------------------------
+    accessories = []
+
+    if "mobile" in product_name or "phone" in product_name:
+        accessories = ["case", "cover", "charger", "headphone", "earphone", "cable"]
+
+    elif "laptop" in product_name or "macbook" in product_name:
+        accessories = ["mouse", "keyboard", "bag", "cooling", "adapter"]
+
+    elif "camera" in product_name:
+        accessories = ["tripod", "lens", "memory", "card", "bag"]
+
+    # --------------------------------
+    # FIND ACCESSORY PRODUCTS
     # --------------------------------
     products = []
-    if history:
-        # Check accessories based on last purchased product
-        last_product = history[-1]
-        product_name = last_product["name"].lower()
-        product_id = last_product["id"]
 
-        accessories = []
-        if "mobile" in product_name or "phone" in product_name:
-            accessories = ["case", "cover", "charger", "headphone", "earphone", "cable"]
-        elif "laptop" in product_name or "macbook" in product_name:
-            accessories = ["mouse", "keyboard", "bag", "cooling", "adapter"]
-        elif "camera" in product_name:
-            accessories = ["tripod", "lens", "memory", "card", "bag"]
+    if accessories:
 
-        if accessories:
-            cur.execute("SELECT id, name, price, image, seller_id FROM products")
-            all_products = cur.fetchall()
+        cur.execute("SELECT id, name, price, image, seller_id FROM products")
+        all_products = cur.fetchall()
 
-            for p in all_products:
-                pname = p["name"].lower()
-                if p["id"] == product_id:
-                    continue
+        for p in all_products:
+            pname = p["name"].lower()
+            if p["id"] == product_id:
+                continue
 
-                for word in accessories:
-                    if word in pname:
-                        products.append(p)
-                        break
+            for word in accessories:
+                if word in pname:
+                    products.append(p)
+                    break
 
-        products = products[:6]
-
+    products = products[:6]
     conn.close()
 
     return render_template(
         "seq.html",
         purchased_products=purchased_products,
-        dl_products=dl_products,
         products=products
     )
 

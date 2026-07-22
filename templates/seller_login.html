@@ -361,14 +361,17 @@ SeqBehNet recommendation models.
 
 <form method="post">
 
-<input name="username" placeholder="Username">
-
-<input type="password" name="password" placeholder="Password">
+<input type="email" name="email" placeholder="Username"required>
+<input type="password" name="password" placeholder="Password"required>
 
 <button>Login</button>
 
 </form>
-
+<form method="POST">
+<input type="email" name="email" placeholder="Username"required>
+<input type="password" name="password" placeholder="Password"required>
+    <button type="submit">Login</button>
+</form>
 <div class="register-link">
 Don't have a seller account?
 <a href="/seller_register"><i class="fa fa-user-plus"></i> Register here</a>

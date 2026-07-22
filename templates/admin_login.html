@@ -347,12 +347,29 @@ advanced analytics powered by TendGraphNet and SeqBehNet models.
 
 <input type="password" name="password" placeholder="Password">
 
+ 
+
 <button>Login</button>
 
 </form>
+<h2>Admin Login</h2>
 
+<form method="POST">
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+    <google_bp = make_google_blueprint(
+    client_id="paste_your_client_id_here",
+    client_secret="paste_your_client_secret_here",
+    scope=["profile", "email"]
+)
+<br>
+<a href="login/google"></a> 
+</div class="register-link">
+<a href="/admin_register">sign in with Google</a>
 </div>
-
+</div>
 </section>
 
 
@@ -384,6 +401,7 @@ Sequential recommendation engine predicting next purchase behavior.
 <i class="fa fa-chart-bar"></i>
 <h3>Demand Insights</h3>
 <p>
+<
 Identifies high-demand products across regions and communities.
 </p>
 </div>

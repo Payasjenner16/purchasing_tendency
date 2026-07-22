@@ -6,3 +6,5 @@ pandas>=1.5
 Flask-Mail>=0.9
 scikit-learn>=1.2
 torch-geometric>=2.3
+Flask-Dance>=7.0.0
+python-dotenv>=1.0.1

@@ -5,8 +5,9 @@ from dotenv import load_dotenv
 # Load configuration from .env file
 load_dotenv()
 
-# Enable local HTTP OAuth transport (for development only)
+# Enable local HTTP OAuth transport and relax token scope validation (for development/testing)
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+os.environ["OAUTHLIB_RELAX_TOKEN_SCOPE"] = "1"
 
 from modules.utils import mail, get_db
 from modules.admin import admin_bp
